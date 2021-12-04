@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel1 from './carousel-1.jpg';
 import Carousel2 from './carousel-22.jpg';
 import Carousel3 from './carousel-img1.png';
-import CarouselTest from './carousel-test.svg';
+//import CarouselTest from './carousel-test.svg';
 import './carousel.scss';
 
 
