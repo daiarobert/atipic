@@ -1,0 +1,34 @@
+.nav-wrapper{
+    width: 100%;
+  background-color: white;
+  .nav-wide{
+    
+  }
+  .logo{
+      height: 80px;
+  }
+  li :hover{
+    .icons{
+      color: white;
+    }
+    color: white;
+  }
+    .icons{
+        color: 
+        #5f83cd;
+        text-size-adjust: 35px;
+        font-size: 35px;
+    }
+    .nav-item:hover {
+      background-color: #fe6500;
+      text-decoration-color: white;
+      height: 100%;
+    }
+}
+
+@media only screen and (max-width: 1066px) {
+  
+  .nav-wide{
+    display: none;
+  }
+}
