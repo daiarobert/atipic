@@ -16,7 +16,7 @@ function Footer() {
                     </ul>
                 </div>
                     <strong className='d-flex justify-content-center text-muted copyright'>Copyright © 2019 Centrul A.T.I.P.I.C. Toate drepturile rezervate. </strong>
-                    <br/>
+                 
                     <small><strong className='d-flex justify-content-center text-muted'>Dezvoltat de <a href="https://mycool.ro">#mycool</a></strong></small>
             </div>
         </div>

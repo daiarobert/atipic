@@ -5,11 +5,14 @@
   .logo{
       height: 80px;
   }
-  li :hover{
+  .logo-scroll{
+    height: 60px;
+  }
+  .nav-link :hover{
     .icons{
-      color: white;
+      color: #fe6500;
     }
-    color: white;
+    color: #fe6500;
   }
     .icons{
         color: 
@@ -17,16 +20,56 @@
         text-size-adjust: 35px;
         font-size: 35px;
     }
+    .nav-item{
+      height: 100%;
+    }
     .nav-item:hover {
-      background-color: #fe6500;
-      text-decoration-color: white;
+      text-decoration-color: #fe6500;
       height: 100%;
     }
 }
 
-@media only screen and (max-width: 1066px) {
+
+////////toggled
+.toggle-nav{
+  background-color: #fe6500;
+  margin: 0;
+  padding: 0;
+
+  .nav-link-toggle {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+  }
+  
+  
+  li,img {
+    text-decoration-color: white;
+    color: white;
+  }
+  .navbar-toggler{
+    height: 100%;
+    color: #fe6500 !important;
+    background-color: #fe6500 !important;
+
+  }
+}
+.icons-toggle{
+  text-size-adjust: 35px;
+        font-size: 35px;
+        margin-right: 1rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 991px) {
   
   .nav-wide{
     display: none;
   }
+  .nav-wrapper .logo{
+    height: 55px;
+}
 }

@@ -4,13 +4,13 @@ import Title from '../title/Title';
 
 function ServicesPage() {
     return (
-        <div className='row'>
+        <div className='col'>
             <div className='col-12 mb-5'>
                 <Title title='Servicii' />
             </div>
             <div className='row d-flex justify-content-center services-wrapper'>
-            <div className='col-6 '>
-                <img src="https://www.centrulatipic.ro/img/servicii-copii-1.png" alt="servicii copii" style={{maxWidth:'510px', height:'280px'}}></img>
+            <div className='col-xs-12 col-md-6 '>
+                <img src="https://www.centrulatipic.ro/img/servicii-copii-1.png" alt="servicii copii" style={{maxWidth:'400px', height:'280px'}}></img>
                 <h1>Servicii pentru copii</h1>
                 <h5 className='text-muted mt-3'>Terapie si recuperare:</h5>
                 <ul>
@@ -35,7 +35,7 @@ function ServicesPage() {
                     <li><a href="https://www.centrulatipic.ro/psihoterapie-cognitiv-comportamentala">Psihoterapie cognitiv-comportamentală</a></li>
                 </ul>
             </div>
-            <div className='col-6'>
+            <div className='col-xs-12 col-md-6'>
             <img src="https://www.centrulatipic.ro/img/servicii-adulti.png" alt="servicii adulti" style={{maxWidth:'510px', height:'280px'}}></img>
                 <h1>Servicii pentru adulti</h1>
                 <ul>

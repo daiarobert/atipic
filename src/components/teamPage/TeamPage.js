@@ -18,7 +18,7 @@ function TeamPage() {
     //     getUsers();
     // },[])
     return (
-        <div>
+        <div className='col'>
             <Title />
             <Members />
             <Terapeuti />

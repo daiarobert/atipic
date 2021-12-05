@@ -7,7 +7,7 @@ import 'bootstrap/dist/js/bootstrap';
 import Home from "./components/homePage/Home";
 import TeamPage from "./components/teamPage/TeamPage";
 import Footer from "./components/footer/Footer";
-import Articles from "./components/articlesPage/Articles";
+import Articles from "./components/articlesPage/Articles.jsx";
 import ServicesPage from "./components/servicesPage/ServicesPage";
 import EventsPage from "./components/eventsPage/EventsPage";
 import DonatePage from "./components/donatePage/DonatePage";
