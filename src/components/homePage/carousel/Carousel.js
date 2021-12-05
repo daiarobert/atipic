@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel1 from './carousel-1.jpg';
-import Carousel2 from './carousel-22.jpg';
-import Carousel3 from './carousel-img1.png';
+import Carousel2 from './carousel-test1.png';
+import Carousel3 from './carousel-test2.png';
 //import CarouselTest from './carousel-test.svg';
 import './carousel.scss';
 
@@ -21,18 +21,18 @@ const Carousel = () => {
   <div class="carousel-inner">
 
     <div class="carousel-item active">
-      <img src={Carousel2} class="d-block carousel-img w-100" alt="..." style={{maxHeight: '38rem'}}/>
+      <img src={Carousel2} class="d-block carousel-img w-100" alt="..." style={{maxHeight: '436px'}}/>
     </div>
 
     <div class="carousel-item">
-      <img src={Carousel3} class="d-block carousel-img w-100" alt="..." style={{maxHeight: '38rem'}}/>
+      <img src={Carousel3} class="d-block carousel-img w-100" alt="..." style={{maxHeight: '436px'}}/>
     </div>
 
     <div class="carousel-item">
-      <img src={Carousel1} class="d-block carousel-img w-100" alt="..." style={{maxHeight: '38rem'}}/>
+      <img src={Carousel1} class="d-block carousel-img w-100" alt="..." style={{maxHeight: '436px'}}/>
     </div>
 
-    <button class="carousel-control-next m-5 " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
