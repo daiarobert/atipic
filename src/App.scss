@@ -33,4 +33,21 @@ body{
   //   height: 300px;
   // }
   
-  
+  body {
+    font-size: 22px;
+  }
+  @media (min-width:576px) {
+    body {
+      font-size: 22px;
+    }
+  }
+  @media (min-width:768px) {
+    body {
+      font-size: 24px;
+    }
+  }
+  @media (min-width:992px) {
+    body {
+      font-size: 34px;
+    }
+  }

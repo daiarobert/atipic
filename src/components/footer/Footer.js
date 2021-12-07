@@ -1,23 +1,22 @@
 import React from 'react';
 import'./footer.scss';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCopyright, faRegistered} from '@fortawesome/free-solid-svg-icons'
+import {faCopyright, faRegistered} from '@fortawesome/free-solid-svg-icons';
+import {faInstagram,faGithub} from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
     return (
-        <div class="template-footer-bottom row d-flex ">
-            <div class="template-align-center template-main">
-                <div class="template-component-social-icon template-component-social-icon-style-1 template-clear-fix template-margin-bottom-2">
-                    <ul className=' justify-content-center d-flex'>
-                        <FontAwesomeIcon icon={faCopyright} className='icons'></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faRegistered} className='icons'></FontAwesomeIcon>
+        <div class="template-footer-bottom d-flex justify-content-center ">
+            <div class="text-center">
+                <div class="template-component-social-icon d-flex justify-content-center">
+                        <FontAwesomeIcon icon={faInstagram} className='icons'></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faGithub} className='icons'></FontAwesomeIcon>
                        
                        
-                    </ul>
                 </div>
-                    <strong className='d-flex justify-content-center text-muted copyright'>Copyright © 2019 Centrul A.T.I.P.I.C. Toate drepturile rezervate. </strong>
+                    <strong className='d-flex justify-content-center text-muted text-center copyright'>Copyright © 2019 Centrul A.T.I.P.I.C. Toate drepturile rezervate. </strong>
                  
-                    <small><strong className='d-flex justify-content-center text-muted'>Dezvoltat de <a href="https://mycool.ro">#mycool</a></strong></small>
+                    <small><strong className='d-flex justify-content-center text-center text-muted'>Dezvoltat de <a href="https://mycool.ro">#mycool</a></strong></small>
             </div>
         </div>
     )

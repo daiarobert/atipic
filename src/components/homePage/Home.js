@@ -6,6 +6,7 @@ import InfoFirstPage from './infoFirstPage/InfoFirstPage';
 import OurStory from './ourStory/OurStory';
 import LetsMeet from './letsMeet/LetsMeet';
 import Partners from '../partners/Partners';
+import Map from '../contactPage/Map';
 
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
             <Info2 />
             <InfoFirstPage />
             <OurStory />
+            <Map />
             <LetsMeet />
             <Partners />
             

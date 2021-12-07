@@ -22,7 +22,7 @@ const Navbar = () => {
     window.addEventListener('scroll', isScrolling);
 
     return (
-        <div className='col d-flex nav-wrapper sticky-top w-100 '>
+        <div className=' d-flex nav-wrapper sticky-top col w-100'>
             <div className='col  d-none d-lg-block logo-app d-flex justify-content-center p-3'>
             <a href='/'><img src={logo} alt="logo" href='/' className={!scroll ? 'logo' : 'logo-scroll'} /></a>
             </div>
@@ -34,11 +34,11 @@ const Navbar = () => {
                     <FontAwesomeIcon icon={faHome} className='icons'></FontAwesomeIcon>
                         <p>Acasa</p>
                     </div></a>
-                    <a className="nav-link active" aria-current="page" href="/team"><div className="nav-item d-flex flex-column align-items-center justify-content-center ">
+                    <a className="nav-link " aria-current="page" href="/team"><div className="nav-item d-flex flex-column align-items-center justify-content-center ">
                     <FontAwesomeIcon icon={faUsers} className='icons'></FontAwesomeIcon>
                         <p>Echipa</p>
                     </div></a>
-                    <a className="nav-link active" aria-current="page" href="/articles"><div className="nav-item d-flex flex-column align-items-center justify-content-center ">
+                    <a className="nav-link " aria-current="page" href="/articles"><div className="nav-item d-flex flex-column align-items-center justify-content-center ">
                     <FontAwesomeIcon icon={faFileAlt} className='icons'></FontAwesomeIcon>
                         <p>Articole</p>
                     </div></a>

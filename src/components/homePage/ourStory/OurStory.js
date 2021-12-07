@@ -1,6 +1,5 @@
 import React from "react";
 import './ourStory.scss';
-import Map from "../../contactPage/Map";
 
 const OurStory = () => {
 
@@ -32,7 +31,6 @@ const OurStory = () => {
                 </div>
                 
            </div>
-           <Map />
         </div>
     )
 }

@@ -10,7 +10,7 @@ function ServicesPage() {
             </div>
             <div className='row d-flex justify-content-center services-wrapper'>
             <div className='col-xs-12 col-md-6 '>
-                <img src="https://www.centrulatipic.ro/img/servicii-copii-1.png" alt="servicii copii" style={{maxWidth:'400px', height:'280px'}}></img>
+                <img src="https://www.centrulatipic.ro/img/servicii-copii-1.png" alt="servicii copii" style={{maxWidth:'380px', height:'280px'}}></img>
                 <h1>Servicii pentru copii</h1>
                 <h5 className='text-muted mt-3'>Terapie si recuperare:</h5>
                 <ul>
@@ -36,7 +36,7 @@ function ServicesPage() {
                 </ul>
             </div>
             <div className='col-xs-12 col-md-6'>
-            <img src="https://www.centrulatipic.ro/img/servicii-adulti.png" alt="servicii adulti" style={{maxWidth:'510px', height:'280px'}}></img>
+            <img src="https://www.centrulatipic.ro/img/servicii-adulti.png" alt="servicii adulti" style={{maxWidth:'380px', height:'280px'}}></img>
                 <h1>Servicii pentru adulti</h1>
                 <ul>
                             <li>Dezvoltare personală</li>
