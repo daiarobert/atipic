@@ -1,8 +1,7 @@
 import React from 'react';
 import InfoFirstPageItem from './InfoFirstPageItem';
 import './infoFirstPage.scss';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faBaby, faChess, faSmileBeam, faTree, faCubes, faUsers} from '@fortawesome/free-solid-svg-icons'
+import {faBaby, faChess, faSmileBeam, faCubes, faUsers} from '@fortawesome/free-solid-svg-icons'
 
 
 

@@ -1,7 +1,6 @@
 import React from 'react';
 //import InfoFirstPage from './InfoFirstPage';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCircle} from '@fortawesome/free-solid-svg-icons';
 
 
 const InfoFirstPageItem = (props) => {
