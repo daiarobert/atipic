@@ -5,13 +5,13 @@ import './events.scss';
 
 function EventsPage() {
     return (
-        <div className='row'>
+        <div className=''>
             <div className='col-12 mb-5'>
                 <Title title='Evenimente' />
             </div>
             <div className=' services-wrapper'>
             
-            <ul className='d-flex row justify-content-start text-center'>
+            <ul className='d-flex row justify-content-start text-center w-100'>
                 <EventsItem />
                 <EventsItem />
                 <EventsItem />

@@ -4,10 +4,32 @@
     margin: auto;
     box-sizing: border-box;
 
+    .circle {
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        background: #fe6500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .circle-blue{
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        background: #5f83cd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .icons {
-        color: #fe6500;
-        font-size: 180px;
-        margin-bottom: 1rem;
+        color: white;
+        font-size: 70px;
     }
     .info {
         max-width: 100%;

@@ -2,41 +2,30 @@ import React from 'react';
 import './contact.scss';
 import Title from '../title/Title';
 import Map from './Map';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import ContactItem from './ContactItem';
 import {faMapPin,faMobileAlt,faEnvelope,faBusinessTime} from '@fortawesome/free-solid-svg-icons'
 
 function ContactPage() {
     return (
-        <div className='row'>
+        <div className='col'>
+            
             <div className='col-12 mb-5'>
                 <Title title='Contact' />
             </div>
-            <div className='row contact-wrapper mb-5'>
-                <div className='col-6 text-center mb-5'>
-                    <FontAwesomeIcon icon={faMapPin} className='icons'></FontAwesomeIcon>
-                    <h5 className='pb-4'>Adresă</h5>
-                    <p><strong>Strada Dristorului, nr. 63</strong></p>
-                    <p><strong>Strada Cezar Bolliac, nr. 72</strong></p>
-                </div>
-                <div className='col-6 text-center'>
-                    <FontAwesomeIcon icon={faMobileAlt} className='icons'></FontAwesomeIcon>
-                    <h5 className='pb-4'>Telefon</h5>
-                    <p><a href="tel:+40744318398" ><i class="fa fa-phone" ></i>
-                        0744 318 398</a>
-                    </p>
-                </div>
-                <div className='col-6 text-center'>
-                    <FontAwesomeIcon icon={faEnvelope} className='icons'></FontAwesomeIcon>
-                    <h5 className='pb-4'>Email</h5>
-                    <p><a href="mailto:contact@centrulatipic.ro"><i class="fas fa-envelope" ></i> contact@centrulatipic.ro</a>
-                    </p>
-                </div>
-                <div className='col-6 text-center'>
-                     <FontAwesomeIcon icon={faBusinessTime} className='icons'></FontAwesomeIcon>
-                     <h5 className='pb-4'>Program</h5>
-                    <p>Luni – Vineri<br/>
-                        10:00 – 19:00</p>
-                </div>
+
+            <div className='row contact-wrapper mb-5 w-100'>
+
+                <ContactItem icon={faMapPin} title='Adresă' paragraph1='Strada Dristorului, nr. 63' paragraph2='Strada Cezar Bolliac, nr. 72'/>
+
+                <ContactItem icon={faMobileAlt} title='Telefon' paragraph1={<a href="tel:+40744318398" ><i class="fa fa-phone" ></i>
+                        0744 318 398</a>} />
+
+                <ContactItem icon={faEnvelope} title='Email' paragraph1={<a href="mailto:contact@centrulatipic.ro"><i class="fas fa-envelope" ></i> contact@centrulatipic.ro</a>} />
+
+                <ContactItem icon={faBusinessTime} title='Program' paragraph1={ <p>Luni – Vineri<br/>
+                        10:00 – 19:00</p>} />
+                
+               
             
         </div>
         <Map />

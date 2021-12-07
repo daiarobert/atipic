@@ -86,12 +86,12 @@ const Navbar = () => {
 
             {/* ////////toggle xs-lg */}
             <nav className="navbar-theme-primary col px-4 d-lg-none navbar navbar-dark w-100">
-            <div className='col-11  d-lg-none logo-app-small d-flex justify-content-center p-3'>
+            <div className='col-10  d-lg-none logo-app-small d-flex justify-content-center p-3'>
             <a href='/'><img src={logo} alt="logo-small" href='/' className={!scroll ? 'logo' : 'logo-scroll'} /></a>
             </div>
                 
                 <button
-                    className="navbar-toggler col-1 d-flex justify-content-end bg-dark collapsed"
+                    className="navbar-toggler col-2 d-flex justify-content-end bg-primary collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#sidebarMenu"

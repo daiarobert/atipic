@@ -9,10 +9,10 @@ import Logo6 from './logos/logo-mycool.svg'
 
 function Partners() {
     return (
-        <div className='wrapper-partners row'>
-            <h2 className='d-flex justify-content-center mt-5'>Parteneri și sponsori</h2>
+        <div className='wrapper-partners'>
+            <h2 className='d-flex justify-content-center mt-5 title-partners'>Parteneri și sponsori</h2>
             <h4 className='text-muted text-center d-flex justify-content-center'>Împreună construim o lume pentru toți</h4>
-                <div className='wrapp row '>
+                <div className='wrapp row w-100'>
                     <div className='col-xs-6 col-sm-6 col-md-4 d-flex justify-content-center'>
                         <img src={Logo1} alt=''/>
                     </div>
