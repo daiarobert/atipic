@@ -13,7 +13,7 @@ function Articles() {
             // const res = await Axios.get(`//api.mediastack.com/v1/news?access_key=${apiKey}&categories=health`);
             // const res = await Axios.get('https://newsapi.org/v2/top-headlines?country=ro&apiKey=7022cf4479294ee48bf872577ab5c7e7');
 
-            setArticles(res.data.data)
+            // setArticles(res.data.data)
             console.log(res);
             // console.log(res.data.data);
         }
