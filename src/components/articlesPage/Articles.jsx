@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import './articles.scss';
 import Axios from 'axios';
-import ArticleItem from './ArticleItem';
+//import ArticleItem from './ArticleItem';
 import Title from '../title/Title';
 
 function Articles() {
-    const [articles, setArticles] = useState([])
-    const apiKey = '208768ae46bb6b48c1fe540952be7b79'
+    //const [articles, setArticles] = useState([])
+    //const apiKey = '208768ae46bb6b48c1fe540952be7b79'
     useEffect(() => {
         const getArticles = async () =>{
             const res = await Axios.get(`/.netlify/functions/getFunction`);
