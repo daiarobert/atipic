@@ -1,34 +1,39 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import './members.scss';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCircleNotch} from '@fortawesome/free-solid-svg-icons'
+import TeamItem from '../TeamItem';
+import Axios from 'axios';
 
 
-function Members() {
+
+function Administrativ() {
+
+    const [users, setUsers] = useState([])
+    useEffect(() => {
+        const getUsers = async () =>{
+            const res = await Axios.get(`/.netlify/functions/getUsers`);
+            setUsers(res.data)
+            console.log(res.data);
+        }
+        getUsers();
+    },[])
+
+
+
+
     return (
-        <div className='wrapper-members row '>
-            
-            <div className='title pt-5 pb-5'><div class='h1-heading text-center'>Coordonatori</div></div>
+
+        <div className='wrapper-members row'>
+           <div class='h1-heading text-center  pt-5 pb-5'>Coordonatori</div>
             <div className='container-members row d-flex justify-content-center align-items-center'>
+            {users.map(user => (
+               <TeamItem userImg={user.picture} name={user.name} description={user.description}/> 
+        ))}
+
+                
+           </div>
             
-            <div className='col-xs-12  col-lg-4 member-info text-center'>
-            <FontAwesomeIcon icon={faCircleNotch} className='icons'></FontAwesomeIcon>
-            <h6 className=''>Numele Meu</h6>
-            <div className='text-muted'>Coordonare ABA, Psihologie clinică, Consiliere psihologică și comunicare</div>
-            </div>
-            <div className='col-xs-12  col-lg-4 member-info text-center'>
-            <FontAwesomeIcon icon={faCircleNotch} className='icons'></FontAwesomeIcon>
-            <h6 className=''>Numele Meu</h6>
-            <div className='text-muted'>Coordonare ABA, Psihologie clinică, Consiliere psihologică și comunicare</div>
-            </div>
-            <div className='col-xs-12  col-lg-4 member-info text-center'>
-            <FontAwesomeIcon icon={faCircleNotch} className='icons'></FontAwesomeIcon>
-            <h6 className=''>Numele Meu</h6>
-            <div className='text-muted'>Coordonare ABA, Psihologie clinică, Consiliere psihologică și comunicare</div>
-            </div>
-            </div>
         </div>
     )
 }
 
-export default Members
+export default Administrativ
