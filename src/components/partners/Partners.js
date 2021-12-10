@@ -13,22 +13,22 @@ function Partners() {
             <h2 className='d-flex justify-content-center mt-5 title-partners'>Parteneri și sponsori</h2>
             <h4 className='text-muted text-center d-flex justify-content-center'>Împreună construim o lume pentru toți</h4>
                 <div className='wrapp row w-100'>
-                    <div className='col-xs-6 col-sm-6 col-md-4 d-flex justify-content-center'>
+                    <div className='col-sm-6 col-md-4 d-flex justify-content-center'>
                         <img src={Logo1} alt=''/>
                     </div>
-                    <div className='col-xs-6 col-sm-6 col-md-4 d-flex justify-content-center'>
+                    <div className='col-sm-6 col-md-4 d-flex justify-content-center'>
                     <img src={Logo2} alt=''/>
                     </div>
-                    <div className='col-xs-6 col-sm-6 col-md-4 d-flex justify-content-center'>
+                    <div className='col-sm-6 col-md-4 d-flex justify-content-center'>
                     <img src={Logo3} alt='' id='crypto'/>
                     </div>
-                    <div className='col-xs-6 col-sm-6 col-md-4 d-flex justify-content-center'>
+                    <div className='col-sm-6 col-md-4 d-flex justify-content-center'>
                     <img src={Logo4} alt=''/>
                     </div>
-                    <div className='col-xs-6 col-sm-6 col-md-4 d-flex justify-content-center'>
+                    <div className='col-sm-6 col-md-4 d-flex justify-content-center'>
                     <img src={Logo5} alt=''/>
                     </div>
-                    <div className='col-xs-6 col-sm-6 col-md-4 d-flex justify-content-center'>
+                    <div className='col-sm-6 col-md-4 d-flex justify-content-center'>
                     <img src={Logo6} alt=''/>
                     </div>
                 </div>

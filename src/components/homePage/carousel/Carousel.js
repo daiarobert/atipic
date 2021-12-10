@@ -1,7 +1,7 @@
 import React from 'react';
-import Carousel1 from './carousel-1.jpg';
-import Carousel2 from './carousel-test1.png';
-import Carousel3 from './carousel-test2.png';
+import Carousel1 from './carousel-2.jpg';
+import Carousel2 from './carousel-img1.png';
+import Carousel3 from './carouselTest.png';
 //import CarouselTest from './carousel-test.svg';
 import './carousel.scss';
 
@@ -21,24 +21,24 @@ const Carousel = () => {
   <div class="carousel-inner">
 
     <div class="carousel-item active">
-      <img src={Carousel2} class="d-block carousel-img w-100" alt="..." style={{maxHeight: '436px'}}/>
+      <img src={Carousel2} class="d-block carousel-img w-100" alt="..." style={{maxWidth: '100%', maxHeight: '500px', overflow: 'hidden'}}/>
     </div>
 
     <div class="carousel-item">
-      <img src={Carousel3} class="d-block carousel-img w-100" alt="..." style={{maxHeight: '436px'}}/>
+      <img src={Carousel3} class="d-block carousel-img w-100" alt="..." style={{maxWidth: '100%',maxHeight: '500px', overflow: 'hidden'}}/>
     </div>
 
     <div class="carousel-item">
-      <img src={Carousel1} class="d-block carousel-img w-100" alt="..." style={{maxHeight: '436px'}}/>
+      <img src={Carousel1} class="d-block carousel-img w-100" alt="..." style={{maxWidth: '100%',maxHeight: '500px', overflow: 'hidden'}}/>
     </div>
 
     <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <div className='circle d-flex justify-content-center align-items-center'><span class="carousel-control-next-icon" aria-hidden="true"></span></div>
       <span class="visually-hidden">Next</span>
     </button>
 
     <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <div className='circle'><span class="carousel-control-prev-icon" aria-hidden="true"></span></div>
       <span class="visually-hidden">Previous</span>
     </button>
 

@@ -36,6 +36,33 @@
         height: 490px;
         //min-height: 490px;
     }
+    .modal__close{
+        border: 0;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        background: #fe6500;
+        border-radius: 50%;
+        color: #fff;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #56509f;
+        margin-bottom: 11px;
+    }
+    .list-checked ul li {
+        padding-left: 30px;
+        margin-bottom: 8px;
+        background-size: 17px 17px;
+        background-repeat: no-repeat;
+        background-position: left 2px;
+        background-image: url(style_1.png);
+        list-style-type: none;
+    }
 }
 
 

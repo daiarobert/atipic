@@ -1,3 +1,5 @@
+
+   
 import React, {useState} from 'react';
 // import '../App.css';
 import './navbar.scss'
@@ -136,7 +138,6 @@ const Navbar = () => {
                             activeClass="sideNavItem"
                             image={<FontAwesomeIcon icon={faHome} className="fa-svgEdit" />}
                         />
-
                         <SideNavItems
                             link="/users"
                             sidebarText="Users"

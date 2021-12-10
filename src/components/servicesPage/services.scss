@@ -2,6 +2,22 @@
     max-width: 1050px;
     margin: auto;
     box-sizing: border-box;
+
+    h3{
+        font-size: 30px;
+        font-weight: 400;
+        color: #56509F;
+    }
+
+li {
+        padding-left: 30px;
+        margin-bottom: 8px;
+        background-size: 17px 17px;
+        background-repeat: no-repeat;
+        background-position: left 2px;
+        background-image: url(../homePage/infoFirstPage/style_1.png);
+        list-style-type: none;
+    }
 }
 
 

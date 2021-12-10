@@ -23,8 +23,8 @@ function Administrativ() {
     return (
 
         <div className='wrapper-members row'>
-           <div class='h1-heading text-center  pt-5 pb-5'>Coordonatori</div>
-            <div className='container-members row d-flex justify-content-center align-items-center'>
+           <div class='h1-heading text-center'>Coordonatori</div>
+            <div className='container-members row'>
             {users.map(user => (
                <TeamItem userImg={user.picture} name={user.name} description={user.description}/> 
         ))}
