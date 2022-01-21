@@ -8,13 +8,22 @@ import Axios from 'axios';
 function Administrativ() {
 
     const [users, setUsers] = useState([])
+    const [test, setTest] = useState([])
+
+    
     useEffect(() => {
+        const getTest = async () =>  {
+            const res = await Axios.get('localhost:5000/users')
+            setTest = (res.data);
+            console.log(res.data);
+        }
         const getUsers = async () =>{
             const res = await Axios.get(`/.netlify/functions/getUsers`);
             setUsers(res.data)
             console.log(res.data);
         }
         getUsers();
+        getTest()
     },[])
 
 

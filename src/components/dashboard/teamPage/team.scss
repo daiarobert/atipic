@@ -1,0 +1,30 @@
+.card {
+    max-width: 100%;
+    max-height: 650px;
+    min-height: 350px;
+    padding: 20px;
+    border: solid 4px #fe660059;
+    .card-img-top {
+        //margin-left: 25%;
+        width: 80px;
+        border-radius: 50%;
+        border: 5px solid #56509f;
+        height: 80px;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+}
+.createBtn {
+    margin-left: auto;
+}
+
+.team-wrapper {
+    margin-left: 260px;
+
+    min-height: 100vh;
+    height: 100%;
+    width: fit-content;
+    .col {
+        width: fit-content;
+    }
+}
