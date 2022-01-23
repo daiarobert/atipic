@@ -14,7 +14,7 @@ const Articles = () => {
     useEffect(async () => {
         const token = getToken();
         try {
-            const res = await Axios.get('http://localhost:5000/api/v1/articles');
+            const res = await Axios.get('https://atipic.herokuapp.com/api/v1/articles');
             setArticles(res.data);
             console.log(articles);
         } catch (err) {
@@ -25,7 +25,7 @@ const Articles = () => {
     const handleDelete = async (id) => {
         const token = getToken();
         try {
-            const res = await Axios.delete(`http://localhost:5000/api/v1/articles/${id}`, {
+            const res = await Axios.delete(`https://atipic.herokuapp.com/api/v1/articles/${id}`, {
                 headers: {
                     token: `Bearer ${token}`,
                 },
@@ -42,7 +42,7 @@ const Articles = () => {
     return (
         <div className="article row g-0 ">
             <SideNav />
-            <div className="col-sm-12 col-md-10">
+            <div className="col-sm-12 col-md-9 " style={{ margin: 'auto' }}>
                 <CreateButton title={'Create Article'} onClick={handleCreate} />
 
                 <div className="row p-3 g-0">

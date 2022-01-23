@@ -2,7 +2,7 @@ import React from 'react';
 
 const CardInfo = (props) => {
     return (
-        <div className={`card ${props.cardClassName}`}>
+        <div className={`card shadow-lg p-3 mb-5 bg-white rounded ${props.cardClassName}`}>
             <div className="card-body d-flex justify-content-center align-items-center flex-column">
                 {/* <p className="card-text">{props.name}</p> */}
                 <img

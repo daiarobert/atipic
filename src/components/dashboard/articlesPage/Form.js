@@ -2,8 +2,11 @@ import React from 'react';
 
 const Card = (props) => {
     return (
-        <div className={`card card-article ${props.cardClassName}`} style={{ height: '100%', maxHeight: '100%' }}>
-            <div className="card-body d-flex justify-content-center align-items-center flex-column">
+        <div
+            className={`card shadow-lg p-3 mb-5 bg-white rounded card-article ${props.cardClassName}`}
+            style={{ height: '100%', maxHeight: '100%' }}
+        >
+            <div className="card-body  d-flex justify-content-center align-items-center flex-column">
                 {/* <p className="card-text">{props.name}</p> */}
                 {/* <img
           src="https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"

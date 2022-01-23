@@ -20,6 +20,9 @@ import CreateUser from './components/dashboard/teamPage/createUser/CreateUser';
 import Articles from './components/dashboard/articlesPage/Articles';
 import CreateArticle from './components/dashboard/articlesPage/createArticle/CreateArticle';
 import UpdateArticle from './components/dashboard/articlesPage/updateArticle/UpdateArticle';
+import Events from './components/dashboard/eventsPage/Events';
+import CreateEvent from './components/dashboard/eventsPage/createEvent/CreateEvent';
+import UpdateEvent from './components/dashboard/eventsPage/updateEvent/Update';
 
 function App() {
     return (
@@ -76,15 +79,24 @@ function App() {
                         component={UpdateArticle}
                         //isAuth={isAuth}
                     />
-                    {/* <ProtectedRoute
-              exact
-              path="/events"
-              component={Events}
-              isAuth={isAuth}
-            />
-            
-            
-             */}
+                    <ProtectedRoute
+                        exact
+                        path="/dashboard/events"
+                        component={Events}
+                        //isAuth={isAuth}
+                    />
+                    <ProtectedRoute
+                        exact
+                        path="/add/event"
+                        component={CreateEvent}
+                        //isAuth={isAuth}
+                    />
+                    <ProtectedRoute
+                        exact
+                        path="/update/event/:id"
+                        component={UpdateEvent}
+                        //isAuth={isAuth}
+                    />
                 </Switch>
             </Router>
         </div>

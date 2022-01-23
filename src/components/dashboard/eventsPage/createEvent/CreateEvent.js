@@ -5,14 +5,15 @@ import { getToken } from '../../../../utils/Common';
 import SideNav from '../../sideNav/SideNav';
 import Form from '../Form';
 
-const Create = () => {
+const CreateEvent = () => {
     const history = useHistory();
     const [title, setTitle] = useState();
     const [description, setDescription] = useState();
     const [readMore, setReadMore] = useState();
-    const [author, setAuthor] = useState();
+    const [startingDate, setStartingDate] = useState();
+    const [endingDate, setEndingDate] = useState();
 
-    const createUser = async () => {
+    const createEvent = async () => {
         const token = getToken();
         const headers = {
             token: `Bearer ${token}`,
@@ -20,41 +21,46 @@ const Create = () => {
 
         try {
             const res = await Axios.post(
-                `https://atipic.herokuapp.com/api/v1/articles/admin/add`,
+                `https://atipic.herokuapp.com/api/v1/events/admin/add`,
 
                 {
+                    startingDate,
+                    endingDate,
                     title,
                     description,
                     readMore,
-                    author,
                 },
                 { headers },
             );
 
-            history.push('/dashboard/articles');
+            history.push('/dashboard/events');
         } catch (err) {
             console.log(err);
         }
     };
     const handleSubmit = (e) => {
         e.preventDefault();
-        createUser();
+        createEvent();
     };
 
+    console.log(JSON.stringify(startingDate));
+    console.log(JSON.stringify(endingDate));
+
     return (
-        <div className="create row g-0">
+        <div className="row g-0">
             <SideNav />
             <div className="col-sm-12 col-md-9 " style={{ margin: 'auto' }}>
                 <div className="row g-0 justify-content-center align-items-center">
-                    <div className=" col-12">
+                    <div className="col-md-7 col-lg-5">
                         <div className="wrapper">
                             <Form
                                 onSubmit={handleSubmit}
-                                btnTitle="Create Article"
+                                onChangeStartingDate={(e) => JSON.stringify(setStartingDate(e.target.value))}
+                                onChangeEndingDate={(e) => JSON.stringify(setEndingDate(e.target.value))}
+                                onChangeTitle={(e) => setTitle(e.target.value)}
                                 onChangeDescription={(e) => setDescription(e.target.value)}
                                 onChangeReadMore={(e) => setReadMore(e.target.value)}
-                                onChangeAuthor={(e) => setAuthor(e.target.value)}
-                                onChangeTitle={(e) => setTitle(e.target.value)}
+                                btnTitle={'Create'}
                             />
                         </div>
                     </div>
@@ -63,4 +69,5 @@ const Create = () => {
         </div>
     );
 };
-export default Create;
+
+export default CreateEvent;

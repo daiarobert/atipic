@@ -3,7 +3,7 @@ import React from 'react';
 const Form = (props) => {
     return (
         <div>
-            <div className={`card-update ${props.cardClassName}`}>
+            <div className={`card-update shadow-lg p-3 mb-5 bg-white rounded ${props.cardClassName}`}>
                 <div className="card-body d-flex justify-content-center align-items-center flex-column">
                     {/* <p className="card-text">{props.name}</p> */}
                     {/* <img
@@ -16,7 +16,7 @@ const Form = (props) => {
                 </div>
 
                 <ul className="list-group list-group-flush ">
-                    <form action="#" class="update-form" onSubmit={props.onSubmit}>
+                    <form action="#" class="update-form" onSubmit={props.onSubmit} encType="multipart/form-data">
                         <div className="form-group">
                             <label htmlFor="image" className="text-dark">
                                 Upload image

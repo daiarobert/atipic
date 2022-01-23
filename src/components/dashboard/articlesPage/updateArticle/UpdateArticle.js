@@ -22,7 +22,7 @@ const UpdateArticle = () => {
 
     useEffect(async () => {
         try {
-            const res = await Axios.get(`http://localhost:5000/api/v1/articles/find/${id}`, {
+            const res = await Axios.get(`https://atipic.herokuapp.com/api/v1/articles/find/${id}`, {
                 headers: { token: `Bearer ${token}` },
             });
             setArticle(res.data);
@@ -35,7 +35,7 @@ const UpdateArticle = () => {
         console.log(`Bearer ${token}`);
         try {
             const res = await Axios.put(
-                `http://localhost:5000/api/v1/articles/${id}`,
+                `https://atipic.herokuapp.com/api/v1/articles/${id}`,
 
                 {
                     title,
@@ -60,7 +60,7 @@ const UpdateArticle = () => {
     return (
         <div className="update row d-flex g-0">
             <SideNav />
-            <div className="col-sm-12 col-md-10">
+            <div className="col-sm-12 col-md-9 " style={{ margin: 'auto' }}>
                 <div className="row g-0 justify-content-center align-items-center">
                     <div className=" col-12">
                         <div className="wrapper">
