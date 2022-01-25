@@ -7,11 +7,8 @@ import LogoutBtn from './LogoutBtn';
 const SideNav = () => {
     const checkLocation = window.location.pathname;
     return (
-        <div className=" col-xs-12 col-lg-3 sticky-top" style={{ maxWidth: 'fit-content' }}>
-            <div
-                className="sideNav side-wrapper d-none d-lg-block col-lg-3 sticky-top"
-                style={{ width: 'fit-content' }}
-            >
+        <div className=" col-xs-12 col-lg-3 sticky-top" style={{ maxWidth: '100%' }}>
+            <div className="sideNav side-wrapper d-none d-lg-block col-lg-3 sticky-top" style={{ width: '100%' }}>
                 <a href="/dashboard">
                     <img src={logo} alt="logo" href="/" className="logo" />
                 </a>
@@ -33,7 +30,7 @@ const SideNav = () => {
                 })}
 
                 <LogoutBtn
-                    btnClassName="btn-primary logoutBtn"
+                    btnClassName="btn-primary rounded-3 logoutBtn"
                     wrapperClassName="d-flex align-items-center justify-content-center  col-12"
                 />
             </div>
@@ -76,7 +73,7 @@ const SideNav = () => {
                             );
                         })}
                         <LogoutBtn
-                            btnClassName="btn-primary logoutBtn mb-2"
+                            btnClassName="btn-primary rounded-3 logoutBtn mb-2"
                             wrapperClassName="d-flex align-items-center justify-content-center  col-12"
                         />
                     </div>

@@ -6,16 +6,20 @@ import './articles.scss';
 import SideNav from '../sideNav/SideNav';
 import CreateButton from '../CreateButton/CreateButton';
 import Card from './Card';
+import Loading from '../loader/Loading';
 
 const Articles = () => {
     const history = useHistory();
     const [articles, setArticles] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     useEffect(async () => {
+        setLoading(true);
         const token = getToken();
         try {
             const res = await Axios.get('https://atipic.herokuapp.com/api/v1/articles');
             setArticles(res.data);
+            setLoading(false);
             console.log(articles);
         } catch (err) {
             console.log(err);
@@ -42,25 +46,29 @@ const Articles = () => {
     return (
         <div className="article row g-0 ">
             <SideNav />
-            <div className="col-sm-12 col-md-9 " style={{ margin: 'auto' }}>
-                <CreateButton title={'Create Article'} onClick={handleCreate} />
+            {loading ? (
+                <Loading />
+            ) : (
+                <div className="col-sm-12 col-md-9 " style={{ margin: 'auto' }}>
+                    <CreateButton title={'Create Article'} onClick={handleCreate} />
 
-                <div className="row p-3 g-0">
-                    {articles.map((data, key) => {
-                        return (
-                            <div className="col-md-12 col-lg-6 col-xl-4 p-2 g-0" key={key}>
-                                <Card
-                                    title={data.title}
-                                    description={data.description}
-                                    author={data.author}
-                                    updateOnClick={() => history.push(`/update/articles/${data._id}`)}
-                                    deleteOnClick={() => handleDelete(data._id)}
-                                />
-                            </div>
-                        );
-                    })}
+                    <div className="row p-3 g-0">
+                        {articles.map((data, key) => {
+                            return (
+                                <div className="col-md-12 col-lg-6 col-xl-4 p-2 g-0" key={key}>
+                                    <Card
+                                        title={data.title}
+                                        description={data.description}
+                                        author={data.author}
+                                        updateOnClick={() => history.push(`/update/articles/${data._id}`)}
+                                        deleteOnClick={() => handleDelete(data._id)}
+                                    />
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
-            </div>
+            )}
         </div>
     );
 };

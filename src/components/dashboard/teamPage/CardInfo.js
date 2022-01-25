@@ -33,7 +33,14 @@ const CardInfo = (props) => {
                 </li>
                 <li className="list-group-item d-flex justify-content-between">
                     Address:
-                    <div className="col-6 d-flex justify-content-end">{props.address}</div>
+                    <div className="col-6 d-flex justify-content-end">
+                        <textarea
+                            className="form-control form-control-sm"
+                            rows="1"
+                            placeholder=""
+                            value={props.address}
+                        />
+                    </div>
                 </li>
                 <li className="list-group-item d-flex justify-content-between">
                     Telephone:

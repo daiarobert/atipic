@@ -19,7 +19,7 @@ const Create = () => {
     const createUser = async () => {
         try {
             const res = await Axios.post(
-                `http://localhost:5000/api/v1/auth/register`,
+                `https://atipic.herokuapp.com/api/v1/auth/register`,
 
                 {
                     firstName,
@@ -32,7 +32,7 @@ const Create = () => {
                 },
             );
 
-            history.push('/users');
+            history.push('/dashboard/users');
         } catch (err) {
             console.log(err);
         }

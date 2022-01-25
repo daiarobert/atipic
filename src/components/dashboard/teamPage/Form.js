@@ -83,25 +83,35 @@ const Form = (props) => {
                             <label className="form-control-placeholder" htmlFor="username">
                                 Role:
                             </label>
-                            <input
-                                type="text"
-                                className="form-control"
-                                required=""
-                                onChange={props.onChangeRole}
-                                defaultValue={props.defaultValueRole}
-                            />
+
+                            <select className="form-select" aria-label="role" required onChange={props.onChangeRole}>
+                                <option selected disabled hidden value={props.defaultValueRole}>
+                                    Select Role:
+                                </option>
+                                <option value="Coordinator">Coordinator</option>
+                                <option value="Therapists">Therapists</option>
+                                <option value="Volunteer">Volunteer</option>
+                                <option value="Administrative">Administrative</option>
+                            </select>
                         </div>
                         <div className="form-group mt-3">
                             <label className="form-control-placeholder" htmlFor="username">
                                 Address:
                             </label>
-                            <input
+                            <textarea
+                                className="form-control form-control-lg mb-3"
+                                rows="1"
+                                placeholder=""
+                                onChange={props.onChangeAddress}
+                                defaultValue={props.defaultValueAddress}
+                            />
+                            {/* <input
                                 type="text"
                                 className="form-control"
                                 required=""
                                 onChange={props.onChangeAddress}
                                 defaultValue={props.defaultValueAddress}
-                            />
+                            /> */}
                         </div>
                         <div className="form-group mt-3">
                             <label className="form-control-placeholder" htmlFor="username">

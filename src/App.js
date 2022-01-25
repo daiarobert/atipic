@@ -23,6 +23,7 @@ import UpdateArticle from './components/dashboard/articlesPage/updateArticle/Upd
 import Events from './components/dashboard/eventsPage/Events';
 import CreateEvent from './components/dashboard/eventsPage/createEvent/CreateEvent';
 import UpdateEvent from './components/dashboard/eventsPage/updateEvent/Update';
+import SideNav from './components/dashboard/sideNav/SideNav';
 
 function App() {
     return (
@@ -37,6 +38,7 @@ function App() {
                     <Route path="/donate" exact component={DonatePage} />
                     <Route path="/contact" exact component={ContactPage} />
                     <PublicRoute exact path="/login" component={Login} />
+
                     <ProtectedRoute
                         exact
                         path="/dashboard"
