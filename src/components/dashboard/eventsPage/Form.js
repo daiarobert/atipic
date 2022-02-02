@@ -58,7 +58,9 @@ const Form = (props) => {
                                 defaultValue={props.defaultValueTitle}
                             />
                         </div>
-
+                        <label htmlFor="description" className="text-dark">
+                            Description:
+                        </label>
                         <textarea
                             className="form-control form-control-lg mb-3"
                             rows="5"
@@ -66,6 +68,9 @@ const Form = (props) => {
                             defaultValue={props.defaultValueDescription}
                             onChange={props.onChangeDescription}
                         ></textarea>
+                        <label htmlFor="event" className="text-dark">
+                            Event:
+                        </label>
                         <textarea
                             className="form-control form-control-lg mb-3"
                             rows="5"

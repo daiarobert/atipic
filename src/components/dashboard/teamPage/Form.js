@@ -68,16 +68,22 @@ const Form = (props) => {
                             />
                         </div>
                         <div className="form-group mt-3">
-                            <label className="form-control-placeholder" htmlFor="username">
-                                Email:
+                            <label className="form-control-placeholder" htmlFor="authorization">
+                                Authorization:
                             </label>
-                            <input
-                                type="text"
-                                className="form-control"
-                                required=""
-                                onChange={props.onChangeEmail}
-                                defaultValue={props.defaultValueEmail}
-                            />
+
+                            <select
+                                className="form-select"
+                                aria-label="admin"
+                                required
+                                onChange={props.onChangeIsAdmin}
+                            >
+                                <option selected disabled hidden value={props.defaultValueIsAdmin}>
+                                    Select Authorization:
+                                </option>
+                                <option value="Admin">Admin</option>
+                                <option value="Not Admin">Not Admin</option>
+                            </select>
                         </div>
                         <div className="form-group mt-3">
                             <label className="form-control-placeholder" htmlFor="username">

@@ -6,7 +6,7 @@ import Axios from 'axios';
 
 const Create = () => {
     const history = useHistory();
-    const [username, setUsername] = useState();
+    const [isAdmin, setIsAdmin] = useState();
     const [email, setEmail] = useState();
     const [firstName, setFirstName] = useState();
     const [lastName, setLastName] = useState();
@@ -15,7 +15,7 @@ const Create = () => {
     const [telephone, setTelephone] = useState();
 
     const [filename, setFilename] = useState();
-
+    console.log(isAdmin);
     const createUser = async () => {
         try {
             const res = await Axios.post(
@@ -29,6 +29,7 @@ const Create = () => {
                     address,
                     telephone,
                     filename,
+                    isAdmin,
                 },
             );
 
@@ -58,6 +59,9 @@ const Create = () => {
                                 onChangeRole={(e) => setRole(e.target.value)}
                                 onChangeAddress={(e) => setAddress(e.target.value)}
                                 onChangeTelephone={(e) => setTelephone(e.target.value)}
+                                onChangeIsAdmin={(e) =>
+                                    e.target.value === 'Admin' ? setIsAdmin(true) : setIsAdmin(false)
+                                }
                                 btnTitle={'Create'}
                             />
                         </div>

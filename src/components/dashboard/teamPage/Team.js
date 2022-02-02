@@ -15,7 +15,6 @@ const Team = () => {
     const [team, setTeam] = useState([]);
     const [date, setDate] = useState('');
     const [loading, setLoading] = useState(false);
-    const [admin, setAdmin] = useState(false);
     useEffect(async () => {
         setLoading(true);
         const token = getToken();
@@ -50,28 +49,14 @@ const Team = () => {
     const handleCreate = () => {
         history.push('/add/user');
     };
-    console.log(admin);
+
     return (
         <div className="team row g-0 ">
             <SideNav />
             {loading ? (
                 <Loading />
             ) : (
-                <div className="col-sm-12 col-md-9 " style={{ margin: 'auto' }}>
-                    <select
-                        className="form-select"
-                        aria-label="role"
-                        required
-                        onChange={(e) => setAdmin(e.target.value)}
-                    >
-                        <option selected readOnly>
-                            Open this select menu
-                        </option>
-                        <option value="Coordinator">Coordinator</option>
-                        <option value="Therapists">Therapists</option>
-                        <option value="Volunteer">Volunteer</option>
-                        <option value="Administrative">Administrative</option>
-                    </select>
+                <div className="col-sm-12 col-md-9  " style={{ margin: 'auto' }}>
                     <CreateButton title={'Create User'} onClick={handleCreate} />
                     <div className="row p-3 g-0 d-flex justify-content-center">
                         {team.map((data, key) => {

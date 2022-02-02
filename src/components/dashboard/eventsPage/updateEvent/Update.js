@@ -90,6 +90,7 @@ const Update = () => {
                                 onChangeDescription={(e) => setDescription(e.target.value)}
                                 defaultValueReadMore={event.readMore}
                                 onChangeReadMore={(e) => setReadMore(e.target.value)}
+                                btnTitle={'Update'}
                             />
                         </div>
                     </div>

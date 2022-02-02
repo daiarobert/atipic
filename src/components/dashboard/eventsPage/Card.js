@@ -5,11 +5,24 @@ const CardInfo = (props) => {
     return (
         <div className={`card shadow p-3 mb-5 bg-white rounded ${props.cardClassName}`} style={{ maxHeight: '100%' }}>
             <div className="card-body d-flex justify-content-center align-items-center flex-column">
-                <h5 className="card-title">{props.title}</h5>
+                <label htmlFor="title" className="text-dark">
+                    Title:
+                </label>
+
+                <textarea
+                    className="form-control form-control-lg mb-3"
+                    rows="1"
+                    placeholder="Description"
+                    defaultValue={props.title}
+                    readOnly
+                ></textarea>
             </div>
 
             {location === '/dashboard/events' ? (
                 <div>
+                    <label htmlFor="description" className="text-dark">
+                        Description:
+                    </label>
                     <textarea
                         className="form-control form-control-lg mb-3"
                         rows="4"
@@ -18,6 +31,9 @@ const CardInfo = (props) => {
                         onChange={props.onChangeDescription}
                         readOnly
                     ></textarea>
+                    <label htmlFor="event" className="text-dark">
+                        Event:
+                    </label>
                     <textarea
                         className="form-control form-control-lg mb-3 "
                         rows="8"

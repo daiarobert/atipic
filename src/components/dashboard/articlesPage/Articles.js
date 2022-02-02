@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import Axios from 'axios';
 import { getToken } from '../../../utils/Common';
+import moment from 'moment';
 import './articles.scss';
 import SideNav from '../sideNav/SideNav';
 import CreateButton from '../CreateButton/CreateButton';
@@ -60,6 +61,8 @@ const Articles = () => {
                                         title={data.title}
                                         description={data.description}
                                         author={data.author}
+                                        createdAt={moment(data.createdAt).format('DD MMM, YYYY')}
+                                        updatedAt={moment(data.updatedAt).format('DD MMM, YYYY')}
                                         updateOnClick={() => history.push(`/update/articles/${data._id}`)}
                                         deleteOnClick={() => handleDelete(data._id)}
                                     />

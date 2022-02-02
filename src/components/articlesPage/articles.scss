@@ -1,15 +1,16 @@
-.articles-wrapper{
+.articles-wrapper {
     max-width: 1050px;
     margin: auto;
     box-sizing: border-box;
-    .card{
+    .card {
         border: none;
+        border-radius: 0%;
         padding: 2rem;
-        .card-body{
+        .card-body {
             margin: 0;
             padding: 0;
         }
-        .card-img-top{
+        .card-img-top {
             max-width: 350px;
             height: 170px;
         }

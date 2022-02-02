@@ -10,7 +10,7 @@ const LogoutBtn = (props) => {
         history.push('/login');
     };
     return (
-        <div className={props.wrapperClassName}>
+        <div className={props.wrapperClassName} style={props.style}>
             <div className={props.className}>
                 <button className={props.btnClassName} value="logout" onClick={handleLogout}>
                     {' '}
