@@ -5,7 +5,7 @@ import './events.scss';
 import Navbar from '../navbar/navbar';
 import Footer from '../footer/Footer';
 
-function EventsPage() {
+const EventsPage = () => {
     return (
         <div className="">
             <Navbar />
@@ -28,6 +28,6 @@ function EventsPage() {
             <Footer />
         </div>
     );
-}
+};
 
 export default EventsPage;
