@@ -12,12 +12,12 @@ function Footer() {
                     <FontAwesomeIcon icon={faGithub} className="icons"></FontAwesomeIcon>
                 </div>
                 <strong className="d-flex justify-content-center text-muted text-center copyright">
-                    Copyright © 2019 Centrul A.T.I.P.I.C. Toate drepturile rezervate.{' '}
+                    Copyright © 2019 A.T.I.P.I.C. All Rights Reserved.{' '}
                 </strong>
 
                 <small>
                     <strong className="d-flex justify-content-center text-center text-muted">
-                        Dezvoltat de <a href="https://mycool.ro">#mycool</a>
+                        Developed by <a href="https://mycool.ro">#mycool</a>
                     </strong>
                 </small>
             </div>

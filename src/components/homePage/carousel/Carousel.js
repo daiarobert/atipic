@@ -37,7 +37,7 @@ const Carousel = () => {
                         src={Carousel2}
                         class="d-block d-lg-none carousel-img w-100"
                         alt="..."
-                        style={{ maxWidth: '100%', maxHeight: '500px', minWidth: '500px', overflow: 'hidden' }}
+                        style={{ maxWidth: '100%', maxHeight: '500px', overflow: 'hidden' }}
                     />
                 </div>
 

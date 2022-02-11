@@ -11,41 +11,41 @@ function ServicesPage() {
         <div className="col">
             <Navbar />
             <div className="col-12 mb-5">
-                <Title title="Servicii" />
+                <Title title="Services" />
             </div>
             <div className="row d-flex services-wrapper">
                 <div className="col-xs-12 col-md-6 mb-5">
                     <img src={ImgServicesChildren} alt="servicii copii" style={{ maxWidth: '100%' }}></img>
-                    <h3>Servicii pentru copii</h3>
-                    <h5 className="text-muted mt-4">Terapie si recuperare:</h5>
-                    <li>Întârziere în dezvoltarea limbajului</li>
-                    <li>Tulburări pervazive de dezvoltare</li>
-                    <li>Tulburări de spectru autist (TSA)</li>
-                    <li>Tulburări de comportament</li>
-                    <li>Sindromul Asperger</li>
-                    <li>Sindromul Down</li>
-                    <li>ADHD</li>
+                    <h3> Child Services </h3>
+                    <h5 className="text-muted mt-4"> Therapy and recovery: </h5>
+                    <li> Delay in language development </li>
+                    <li> Pervasive developmental disorders </li>
+                    <li> Autism Spectrum Disorders (ASD) </li>
+                    <li> Behavioral disorders </li>
+                    <li> Asperger's Syndrome </li>
+                    <li> Down Syndrome </li>
+                    <li> ADHD </li>
                     <br />
                     <br />
                     <br />
-                    <li>Logopedie</li>
-                    <li>Terapie ABA</li>
-                    <li>Terapie Son-Rise</li>
-                    <li>Dezvoltare personală</li>
-                    <li>Consiliere psihologică</li>
-                    <li>Psihoterapie individuală</li>
-                    <li>Psihoterapie cognitiv-comportamentală</li>
+                    <li> Speech Therapy </li>
+                    <li> ABA Therapy </li>
+                    <li> Son Rise Therapy </li>
+                    <li> Personal development </li>
+                    <li> Psychological counseling </li>
+                    <li> Individual psychotherapy </li>
+                    <li> Cognitive-behavioral psychotherapy </li>
                 </div>
                 <div className="col-xs-12 col-md-6">
                     <img src={ImgServicesAdults} alt="servicii adulti" style={{ maxWidth: '100%' }}></img>
-                    <h3 className="mb-4">Servicii pentru adulti</h3>
-                    <li>Dezvoltare personală</li>
-                    <li>Consiliere psihologică, educație pentru sănătate</li>
-                    <li>Programe de psihoterapie individuală, de cuplu și de grup</li>
-                    <li>Intervenție psihologică clinică primară pentru orice diagnostic</li>
-                    <li>Cursuri, workshop-uri și seminarii pe teme psihologice de actualitate</li>
-                    <li>Terapie de suport în gestionarea emoțiilor negative, anxietate și fobii specifice</li>
-                    <li>Evaluare și intervenție, specifică cuplurilor infertile în reproducerea umană asistată</li>
+                    <h3 className="mb-4"> Adult Services </h3>
+                    <li> Personal development </li>
+                    <li> Psychological counseling, health education </li>
+                    <li> Individual, couple and group psychotherapy programs </li>
+                    <li> Primary clinical psychological intervention for any diagnosis </li>
+                    <li> Courses, workshops and seminars on current psychological topics </li>
+                    <li> Supportive therapy in managing negative emotions, anxiety and specific phobias </li>
+                    <li> Assessment and intervention, specific to infertile couples in assisted human reproduction </li>
                 </div>
             </div>
             <Footer />

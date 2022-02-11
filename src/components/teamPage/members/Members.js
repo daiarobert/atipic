@@ -18,7 +18,7 @@ function Administrativ() {
 
     return (
         <div className="wrapper-members row">
-            <div class="h1-heading text-center">Coordonatori</div>
+            <div class="h1-heading text-center">Coordinator</div>
             <div className="container-members row">
                 {users.map((user) =>
                     user.role === 'Coordinator' ? (

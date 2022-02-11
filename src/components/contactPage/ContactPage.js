@@ -18,18 +18,18 @@ function ContactPage() {
             <div className="row contact-wrapper mb-5 w-100">
                 <ContactItem
                     icon={faMapPin}
-                    title="Adresă"
-                    paragraph1="Strada Dristorului, nr. 63"
-                    paragraph2="Strada Cezar Bolliac, nr. 72"
+                    title="Address"
+                    paragraph1="Barcelona Street, no. 11"
+                    paragraph2="Cezar Street, no. 15"
                 />
 
                 <ContactItem
                     icon={faMobileAlt}
-                    title="Telefon"
+                    title="Telephone"
                     paragraph1={
-                        <a href="tel:+40744318398">
+                        <a href="tel:+40744300300">
                             <i class="fa fa-phone"></i>
-                            0744 318 398
+                            0744 300 300
                         </a>
                     }
                 />
@@ -38,8 +38,8 @@ function ContactPage() {
                     icon={faEnvelope}
                     title="Email"
                     paragraph1={
-                        <a href="mailto:contact@centrulatipic.ro">
-                            <i class="fas fa-envelope"></i> contact@centrulatipic.ro
+                        <a href="mailto:contact@atipic.ro">
+                            <i class="fas fa-envelope"></i> contact@atipic.ro
                         </a>
                     }
                 />
@@ -49,7 +49,7 @@ function ContactPage() {
                     title="Program"
                     paragraph1={
                         <p>
-                            Luni – Vineri
+                            Monday – Friday
                             <br />
                             10:00 – 19:00
                         </p>

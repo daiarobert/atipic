@@ -1,39 +1,52 @@
-import React from "react";
+import React from 'react';
 import './ourStory.scss';
 
 const OurStory = () => {
-
-
-    return(
-        <div className='wrapper-ourStory row w-100'>
-           <div className='wrapper-text p-5'>
-           <div class="header-ourStory" >
-                    <h2 >Povestea noastră</h2>
+    return (
+        <div className="wrapper-ourStory row w-100">
+            <div className="wrapper-text p-5">
+                <div class="header-ourStory">
+                    <h2>Our Story</h2>
                     <div></div>
                 </div>
-           <div class="pb-text col-12" >
-                    <p className='text-muted'>Născută din dorința unor specialiști de a face diferența pe piața serviciilor psihologice,
-                        <strong>Asociația Terapeutică de Intervenție, Psihoterapie Individuală și Comportamentală
-                             - A.T.I.P.I.C</strong> propune o abordare integrată, multidisciplinară și din perspective
-                        noi ale “științei sufletului și a minții”.</p>
-                    <p className='text-muted'>Asociația noastră se axează pe terapia, recuperarea și maximizarea potențialului copiilor cu TSA
-                        și întârziere în dezvoltare, precum și pe oferirea sprijinului psiho-emoțional acordat
-                        familiilor acestora.</p>
-                    <p className='text-muted'>Terapia personalizată, adaptată nevoilor individuale, precum și serviciile de cea mai buna
-                        calitate oferite de un personal specializat și dedicat întru totul micuților,
-                        ne ajută să ne mândrim cu rezultate de excepție obținute cu ajutorul terapiei ABA, VB, art
-                        terapiei și logopediei.</p>
-                    <p className='text-muted'>Rezultatele obținute variază de la corectarea limbajului, stabilitatea comportamentului și
-                        reducerea stereotipiilor, pâna la adaptarea și inserția socială corespunzatoare vârstei.</p>
-                    <p className='text-muted'>Pentru noi, provocarea de zi cu zi este să aducem informații valoroase, să oferim suport și
-                        consiliere, să inspirăm, cu pasiune și devotament, cu respect pentru profesie și dragoste pentru
-                        oameni.</p>
+                <div class="pb-text col-12">
+                    <p className="text-muted">
+                        {' '}
+                        Born out of the desire of specialists to make a difference in the market for psychological
+                        services,
+                        <strong>
+                            {' '}
+                            Therapeutic Association for Intervention, Individual and Behavioral Psychotherapy -
+                            A.T.I.P.I.C{' '}
+                        </strong>{' '}
+                        proposes an integrated, multidisciplinary and perspective approach of the "science of the soul
+                        and the mind."{' '}
+                    </p>
+                    <p className="text-muted">
+                        {' '}
+                        Our association focuses on therapy, recovery and maximizing the potential of children with ASD
+                        and developmental delay, as well as the provision of psycho-emotional support their families.{' '}
+                    </p>
+                    <p className="text-muted">
+                        {' '}
+                        Personalized therapy tailored to individual needs as well as the best services quality offered
+                        by a specialized staff dedicated entirely to the little ones, helps us to be proud of
+                        exceptional results obtained with the help of ABA therapy, VB, art therapy and speech therapy.{' '}
+                    </p>
+                    <p className="text-muted">
+                        {' '}
+                        Results range from language correction, behavioral stability, and reducing stereotypes, to the
+                        age-appropriate adaptation and social inclusion.{' '}
+                    </p>
+                    <p className="text-muted">
+                        {' '}
+                        For us, the daily challenge is to bring valuable information, support and counseling, to
+                        inspire, with passion and devotion, with respect for the profession and love for people.{' '}
+                    </p>
                 </div>
-                
-           </div>
+            </div>
         </div>
-    )
-}
+    );
+};
 
-
-export default OurStory
+export default OurStory;

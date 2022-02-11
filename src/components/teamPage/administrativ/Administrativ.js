@@ -16,7 +16,7 @@ function Administrativ() {
 
     return (
         <div className="wrapper-members row">
-            <div class="h1-heading text-center  pt-5 pb-5">Administrativ</div>
+            <div class="h1-heading text-center  pt-5 pb-5">Administrative</div>
             <div className="container-members row d-flex  align-items-center">
                 {staff.map((user) =>
                     user.role === 'Administrative' ? (

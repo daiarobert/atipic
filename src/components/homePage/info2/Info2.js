@@ -1,15 +1,17 @@
-import React from 'react'
+import React from 'react';
 import './info2.scss';
 
 function Info2() {
     return (
         <div class="info-template">
-        <h1 class="h1-heading text-center d-flex">Asociația Terapeutică de Intervenție, Psihoterapie Individuală și Comportamentală</h1>
-        <h2 class="h2-heading  text-center text-muted">Terapie ABA și Psihoterapie</h2>
-        <div></div>
-    </div>
-    )
+            <h1 class="h1-heading text-center d-flex">
+                {' '}
+                Therapeutic Association for Intervention, Individual and Behavioral Psychotherapy{' '}
+            </h1>
+            <h2 class="h2-heading text-center text-muted"> ABA Therapy and Psychotherapy </h2>
+            <div></div>
+        </div>
+    );
 }
 
-export default Info2
-
+export default Info2;

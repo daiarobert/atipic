@@ -16,7 +16,7 @@ function Voluntari() {
 
     return (
         <div className="wrapper-members row">
-            <div class="h1-heading text-center  pt-5 pb-5">Voluntari</div>
+            <div class="h1-heading text-center  pt-5 pb-5">Volunteer</div>
             <div className="container-members row d-flex  align-items-center">
                 {volunteers.map((user) =>
                     user.role === 'Volunteer' ? (

@@ -26,7 +26,7 @@ function Articles() {
         <div className="col">
             <Navbar />
             <div className="col-12 mb-5">
-                <Title title="Articole" />
+                <Title title="Articles" />
             </div>
             <div className="row articles-wrapper">
                 {articles.map((article) => (

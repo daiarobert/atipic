@@ -39,37 +39,37 @@ const Navbar = () => {
                         <a className="nav-link active" aria-current="page" href="/">
                             <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
                                 <FontAwesomeIcon icon={faHome} className="icons"></FontAwesomeIcon>
-                                <p>Acasa</p>
+                                <p>Home</p>
                             </div>
                         </a>
                         <a className="nav-link " aria-current="page" href="/team">
                             <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
                                 <FontAwesomeIcon icon={faUsers} className="icons"></FontAwesomeIcon>
-                                <p>Echipa</p>
+                                <p>Team</p>
                             </div>
                         </a>
                         <a className="nav-link " aria-current="page" href="/articles">
                             <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
                                 <FontAwesomeIcon icon={faFileAlt} className="icons"></FontAwesomeIcon>
-                                <p>Articole</p>
+                                <p>Articles</p>
                             </div>
                         </a>
                         <a className="nav-link " aria-current="page" href="/services">
                             <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
                                 <FontAwesomeIcon icon={faConciergeBell} className="icons"></FontAwesomeIcon>
-                                <p>Servicii</p>
+                                <p>Services</p>
                             </div>
                         </a>
                         <a className="nav-link " aria-current="page" href="/events">
                             <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
                                 <FontAwesomeIcon icon={faTicketAlt} className="icons"></FontAwesomeIcon>
-                                <p>Evenimente</p>
+                                <p>Events</p>
                             </div>
                         </a>
                         <a className="nav-link " aria-current="page" href="/donate">
                             <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
                                 <FontAwesomeIcon icon={faHandHoldingMedical} className="icons"></FontAwesomeIcon>
-                                <p>Doneaza</p>
+                                <p>Donate</p>
                             </div>
                         </a>
                         <a className="nav-link " aria-current="page" href="/contact">
@@ -83,32 +83,32 @@ const Navbar = () => {
                     <div className="d-flex justify-content-end align-items-center mt-4 items-wrapper">
                         <a className="nav-link " aria-current="page" href="/">
                             <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
-                                <p>Acasa</p>
+                                <p>Home</p>
                             </div>
                         </a>
                         <a className="nav-link " aria-current="page" href="/team">
                             <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
-                                <p>Echipa</p>
+                                <p>Team</p>
                             </div>
                         </a>
                         <a className="nav-link " aria-current="page" href="/articles">
                             <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
-                                <p>Articole</p>
+                                <p>Articles</p>
                             </div>
                         </a>
                         <a className="nav-link " aria-current="page" href="/services">
                             <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
-                                <p>Servicii</p>
+                                <p>Services</p>
                             </div>
                         </a>
                         <a className="nav-link " aria-current="page" href="/events">
                             <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
-                                <p>Evenimente</p>
+                                <p>Events</p>
                             </div>
                         </a>
                         <a className="nav-link " aria-current="page" href="/donate">
                             <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
-                                <p>Doneaza</p>
+                                <p>Donate</p>
                             </div>
                         </a>
                         <a className="nav-link " aria-current="page" href="/contact">
@@ -144,37 +144,37 @@ const Navbar = () => {
                         <li className="nav-item d-flex  align-items-center justify-content-center p-3">
                             <FontAwesomeIcon icon={faHome} className="icons-toggle"></FontAwesomeIcon>
                             <a className="nav-link-toggle active" aria-current="page" href="/">
-                                Acasa
+                                Home
                             </a>
                         </li>
                         <li className="nav-item d-flex align-items-center justify-content-center p-3">
                             <FontAwesomeIcon icon={faUsers} className="icons-toggle"></FontAwesomeIcon>
                             <a className="nav-link-toggle" href="/team">
-                                Echipa
+                                Team
                             </a>
                         </li>
                         <li className="nav-item d-flex align-items-center justify-content-center p-3">
                             <FontAwesomeIcon icon={faFileAlt} className="icons-toggle"></FontAwesomeIcon>
                             <a className="nav-link-toggle" href="/articles">
-                                Articole
+                                Articles
                             </a>
                         </li>
                         <li className="nav-item d-flex align-items-center justify-content-center p-3">
                             <FontAwesomeIcon icon={faConciergeBell} className="icons-toggle"></FontAwesomeIcon>
                             <a className="nav-link-toggle" href="/services">
-                                Servicii
+                                Services
                             </a>
                         </li>
                         <li className="nav-item d-flex align-items-center justify-content-center p-3">
                             <FontAwesomeIcon icon={faTicketAlt} className="icons-toggle"></FontAwesomeIcon>
                             <a className="nav-link-toggle" href="/events">
-                                Evenimente
+                                Events
                             </a>
                         </li>
                         <li className="nav-item d-flex align-items-center justify-content-center p-3">
                             <FontAwesomeIcon icon={faHandHoldingMedical} className="icons-toggle"></FontAwesomeIcon>
                             <a className="nav-link-toggle" href="/donate">
-                                Doneaza
+                                Donate
                             </a>
                         </li>
                         <li className="nav-item d-flex align-items-center justify-content-center p-3">
@@ -183,30 +183,6 @@ const Navbar = () => {
                                 Contact
                             </a>
                         </li>
-                        {/* <SideNavItems
-                            link="/dashboard"
-                            sidebarText="Dashboard"
-                            activeClass="sideNavItem"
-                            image={<FontAwesomeIcon icon={faHome} className="fa-svgEdit" />}
-                        />
-                        <SideNavItems
-                            link="/users"
-                            sidebarText="Users"
-                            activeClass="sideNavItem"
-                            image={<FontAwesomeIcon icon={faUsers} className="fa-svgEdit" />}
-                        />
-                        <SideNavItems
-                            link="/location"
-                            sidebarText="Location"
-                            activeClass="sideNavItem"
-                            image={<FontAwesomeIcon icon={faMap} className="fa-svgEdit" />}
-                        />
-                        <SideNavItems
-                            link="/clients"
-                            sidebarText="Clients"
-                            activeClass="sideNavItem"
-                            image={<FontAwesomeIcon icon={faAddressCard} className="fa-svgEdit" />}
-                        /> */}
                     </div>
                 </div>
             </nav>

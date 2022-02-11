@@ -10,7 +10,7 @@ const EventsPage = () => {
         <div className="">
             <Navbar />
             <div className="col-12 mb-5">
-                <Title title="Evenimente" />
+                <Title title="Events" />
             </div>
             <div className=" services-wrapper">
                 <ul className="d-flex row justify-content-start text-center w-100">
