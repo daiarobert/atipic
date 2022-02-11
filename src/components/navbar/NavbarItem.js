@@ -1,16 +1,54 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faHome,
+    faUsers,
+    faFileAlt,
+    faConciergeBell,
+    faTicketAlt,
+    faHandHoldingMedical,
+    faAddressCard,
+} from '@fortawesome/free-solid-svg-icons';
 
-function NavbarItem() {
-    return (
-            <div className='d-flex justify-content-end align-items-center mt-4 items-wrapper'>
-                    <a className="nav-link active" aria-current="page" href="/">
-                        <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
-                            <FontAwesomeIcon icon={faHome} className='icons'></FontAwesomeIcon>
-                                <p>Acasa</p>
-                        </div>
-                    </a>
-            </div>
-    )
-}
+export const NavData = [
+    {
+        title: 'Home',
+        icon: <FontAwesomeIcon icon={faHome} className="icons"></FontAwesomeIcon>,
+        link: '/',
+    },
+    {
+        title: 'Articles',
+        icon: <FontAwesomeIcon icon={faFileAlt} className="icons"></FontAwesomeIcon>,
+        link: '/articles',
+    },
+    {
+        title: 'Team',
+        icon: <FontAwesomeIcon icon={faUsers} className="icons"></FontAwesomeIcon>,
 
-export default NavbarItem
+        link: '/team',
+    },
+    {
+        title: 'Services',
+        icon: <FontAwesomeIcon icon={faConciergeBell} className="icons"></FontAwesomeIcon>,
+
+        link: '/services',
+    },
+    {
+        title: 'Events',
+        icon: <FontAwesomeIcon icon={faTicketAlt} className="icons"></FontAwesomeIcon>,
+
+        link: '/events',
+    },
+    {
+        title: 'Donate',
+        icon: <FontAwesomeIcon icon={faHandHoldingMedical} className="icons"></FontAwesomeIcon>,
+
+        link: '/donate',
+    },
+    {
+        title: 'Contact',
+        icon: <FontAwesomeIcon icon={faTicketAlt} className="icons"></FontAwesomeIcon>,
+
+        link: '/contact',
+    },
+];

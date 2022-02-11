@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEdit } from '@fortawesome/free-solid-svg-icons';
 
 const Form = (props) => {
     return (
@@ -80,8 +82,8 @@ const Form = (props) => {
                         ></textarea>
 
                         <div className="form-group mt-4">
-                            <button type="submit" className="form-control btn btn-primary rounded submit px-3">
-                                {props.btnTitle}
+                            <button className="btn-edit rounded-2 col-12 m-1 " onClick={props.updateOnClick}>
+                                <FontAwesomeIcon icon={faEdit} className="icon-edit"></FontAwesomeIcon>
                             </button>
                         </div>
                     </form>

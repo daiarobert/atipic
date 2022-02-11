@@ -14,6 +14,7 @@ const Update = () => {
     const [email, setEmail] = useState();
     const [firstName, setFirstName] = useState();
     const [lastName, setLastName] = useState();
+    const [isAdmin, setIsAdmin] = useState();
     const [role, setRole] = useState();
     const [address, setAddress] = useState();
     const [telephone, setTelephone] = useState();
@@ -46,12 +47,13 @@ const Update = () => {
         console.log(`Bearer ${token}`);
         try {
             const res = await Axios.put(
-                `https://atipic.herokuapp.com/api/v1/users/${id}`,
+                `http://localhost:5000/api/v1/users/${id}`,
 
                 {
                     firstName,
                     lastName,
                     email,
+                    isAdmin,
                     role,
                     address,
                     telephone,
@@ -89,6 +91,8 @@ const Update = () => {
                                 onChangeEmail={(e) => setEmail(e.target.value)}
                                 defaultValueRole={user.role}
                                 onChangeRole={(e) => setRole(e.target.value)}
+                                defaultValueIsAdmin={user.isAdmin}
+                                onChangeIsAdmin={(e) => setIsAdmin(e.target.value)}
                                 defaultValueAddress={user.address}
                                 onChangeAddress={(e) => setAddress(e.target.value)}
                                 defaultValueTelephone={user.telephone}

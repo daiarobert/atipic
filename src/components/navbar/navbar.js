@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavData } from './NavbarItem';
 // import '../App.css';
 import './navbar.scss';
 import logo from './logo_header.png';
@@ -24,6 +25,7 @@ const Navbar = () => {
         }
     };
 
+    const checkLocation = window.location.pathname;
     window.addEventListener('scroll', isScrolling);
 
     return (
@@ -36,52 +38,46 @@ const Navbar = () => {
             <div className="nav  nav-wide col-7 d-flex align-items-center justify-content-end d-none d-lg-block">
                 {!scroll ? (
                     <div className="d-flex justify-content-end align-items-center mt-4 items-wrapper">
-                        <a className="nav-link active" aria-current="page" href="/">
-                            <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
-                                <FontAwesomeIcon icon={faHome} className="icons"></FontAwesomeIcon>
-                                <p>Home</p>
-                            </div>
-                        </a>
-                        <a className="nav-link " aria-current="page" href="/team">
-                            <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
-                                <FontAwesomeIcon icon={faUsers} className="icons"></FontAwesomeIcon>
-                                <p>Team</p>
-                            </div>
-                        </a>
-                        <a className="nav-link " aria-current="page" href="/articles">
-                            <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
-                                <FontAwesomeIcon icon={faFileAlt} className="icons"></FontAwesomeIcon>
-                                <p>Articles</p>
-                            </div>
-                        </a>
-                        <a className="nav-link " aria-current="page" href="/services">
-                            <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
-                                <FontAwesomeIcon icon={faConciergeBell} className="icons"></FontAwesomeIcon>
-                                <p>Services</p>
-                            </div>
-                        </a>
-                        <a className="nav-link " aria-current="page" href="/events">
-                            <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
-                                <FontAwesomeIcon icon={faTicketAlt} className="icons"></FontAwesomeIcon>
-                                <p>Events</p>
-                            </div>
-                        </a>
-                        <a className="nav-link " aria-current="page" href="/donate">
-                            <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
-                                <FontAwesomeIcon icon={faHandHoldingMedical} className="icons"></FontAwesomeIcon>
-                                <p>Donate</p>
-                            </div>
-                        </a>
-                        <a className="nav-link " aria-current="page" href="/contact">
-                            <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
-                                <FontAwesomeIcon icon={faAddressCard} className="icons"></FontAwesomeIcon>
-                                <p>Contact</p>
-                            </div>
-                        </a>
+                        {NavData.map((data, key) => {
+                            return (
+                                <a
+                                    className="nav-link "
+                                    aria-current="page"
+                                    href={data.link}
+                                    key={key}
+                                    id={checkLocation === data.link ? 'active' : ''}
+                                    onClick={() => {
+                                        window.location.pathname = data.link;
+                                    }}
+                                >
+                                    <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
+                                        <div id="icon">{data.icon}</div>
+                                        <p>{data.title}</p>
+                                    </div>
+                                </a>
+                            );
+                        })}
                     </div>
                 ) : (
                     <div className="d-flex justify-content-end align-items-center mt-4 items-wrapper">
-                        <a className="nav-link " aria-current="page" href="/">
+                        {NavData.map((data, key) => {
+                            <a>
+                                <div
+                                    className="nav-link "
+                                    aria-current="page"
+                                    href={data.link}
+                                    key={key}
+                                    id={checkLocation === data.link ? 'active' : ''}
+                                    onClick={() => {
+                                        window.location.pathname = data.link;
+                                    }}
+                                    className="nav-item-scroll d-flex flex-column align-items-center justify-content-center "
+                                >
+                                    <p>{data.title}</p>
+                                </div>
+                            </a>;
+                        })}
+                        {/* <a className="nav-link " aria-current="page" href="/">
                             <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
                                 <p>Home</p>
                             </div>
@@ -115,7 +111,7 @@ const Navbar = () => {
                             <div className="nav-item d-flex flex-column align-items-center justify-content-center ">
                                 <p>Contact</p>
                             </div>
-                        </a>
+                        </a> */}
                     </div>
                 )}
             </div>

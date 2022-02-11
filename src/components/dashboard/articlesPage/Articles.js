@@ -8,6 +8,7 @@ import SideNav from '../sideNav/SideNav';
 import CreateButton from '../CreateButton/CreateButton';
 import Card from './Card';
 import Loading from '../loader/Loading';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Articles = () => {
     const history = useHistory();
@@ -51,7 +52,7 @@ const Articles = () => {
                 <Loading />
             ) : (
                 <div className="col-sm-12 col-md-9 " style={{ margin: 'auto' }}>
-                    <CreateButton title={'Create Article'} onClick={handleCreate} />
+                    <CreateButton icon={faPlus} onClick={handleCreate} />
 
                     <div className="row p-3 g-0">
                         {articles.map((data, key) => {

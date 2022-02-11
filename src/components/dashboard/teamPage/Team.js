@@ -8,6 +8,7 @@ import Axios from 'axios';
 import { getToken } from '../../../utils/Common';
 import moment from 'moment';
 import Loading from '../loader/Loading';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Team = () => {
     const history = useHistory();
@@ -46,6 +47,10 @@ const Team = () => {
             console.log(err);
         }
     };
+    const tryDelete = () => {
+        return <div>are you sure?</div>;
+    };
+
     const handleCreate = () => {
         history.push('/add/user');
     };
@@ -57,7 +62,7 @@ const Team = () => {
                 <Loading />
             ) : (
                 <div className="col-sm-12 col-md-9  " style={{ margin: 'auto' }}>
-                    <CreateButton title={'Create User'} onClick={handleCreate} />
+                    <CreateButton icon={faPlus} onClick={handleCreate} />
                     <div className="row p-3 g-0 d-flex justify-content-center">
                         {team.map((data, key) => {
                             return (
@@ -85,7 +90,7 @@ const Team = () => {
                                         createdAt={moment(data.createdAt).format('DD MMM, YYYY')}
                                         updatedAt={moment(data.updatedAt).format('DD MMM, YYYY')}
                                         updateOnClick={() => history.push(`/update/user/${data._id}`)}
-                                        deleteOnClick={() => handleDelete(data._id)}
+                                        deleteOnClick={() => alert('are you sure?')}
                                     />
                                 </div>
                             );

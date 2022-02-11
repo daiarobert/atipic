@@ -7,6 +7,7 @@ import Axios from 'axios';
 import { getToken } from '../../../utils/Common';
 import moment from 'moment';
 import Loading from '../loader/Loading';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Events = () => {
     const [event, setEvent] = useState([]);
@@ -57,7 +58,7 @@ const Events = () => {
                 <Loading />
             ) : (
                 <div className="col-sm-12 col-md-9 " style={{ margin: 'auto' }}>
-                    <CreateButton title={'Create Event'} onClick={handleCreate} />
+                    <CreateButton icon={faPlus} onClick={handleCreate} />
 
                     <div className="row p-3 g-0">
                         {event.map((data, key) => {

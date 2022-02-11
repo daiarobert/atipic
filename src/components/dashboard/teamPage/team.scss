@@ -14,6 +14,52 @@
         object-fit: cover;
     }
 }
+.btn-edit {
+    border: none;
+    background-color: #5f83cd;
+    .icon-edit {
+        color: white;
+    }
+}
+.btn-delete {
+    border: none;
+    background-color: #d2392a;
+    .icon-delete {
+        color: white;
+    }
+}
+
+.btn-delete:hover {
+    background-color: #b13125;
+}
+
+.btn-edit:hover {
+    background-color: #5170ad;
+}
+.card-update {
+    .btn-edit {
+        border: none;
+        background-color: #5f83cd;
+        .icon-edit {
+            color: white;
+        }
+    }
+    .btn-delete {
+        border: none;
+        background-color: #d2392a;
+        .icon-delete {
+            color: white;
+        }
+    }
+
+    .btn-delete:hover {
+        background-color: #b13125;
+    }
+
+    .btn-edit:hover {
+        background-color: #5170ad;
+    }
+}
 .createBtn {
     margin-left: auto;
 }

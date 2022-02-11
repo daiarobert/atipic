@@ -58,10 +58,10 @@ const UpdateArticle = () => {
     };
 
     return (
-        <div className="update row d-flex g-0">
+        <div className=" row g-0">
             <SideNav />
             <div className="col-sm-12 col-md-9 " style={{ margin: 'auto' }}>
-                <div className="row g-0 justify-content-center align-items-center">
+                <div className="row g-0">
                     <div className=" col-12">
                         <div className="wrapper">
                             <Form

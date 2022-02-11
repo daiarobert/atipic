@@ -1,6 +1,8 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { removeUserSession } from '../../../utils/Common';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
 const LogoutBtn = (props) => {
     const history = useHistory();
@@ -13,8 +15,7 @@ const LogoutBtn = (props) => {
         <div className={props.wrapperClassName} style={props.style}>
             <div className={props.className}>
                 <button className={props.btnClassName} value="logout" onClick={handleLogout}>
-                    {' '}
-                    Logout
+                    Logout <FontAwesomeIcon icon={faSignOutAlt} className="icon"></FontAwesomeIcon>
                 </button>
             </div>
         </div>

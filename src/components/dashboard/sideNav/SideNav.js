@@ -74,7 +74,7 @@ const SideNav = () => {
                             );
                         })}
                         <LogoutBtn
-                            btnClassName="btn-primary rounded-3 logoutBtn mb-3 mt-5"
+                            btnClassName="btn-primary rounded-3 logoutBtn mb-3 w-100 mt-5"
                             wrapperClassName="d-flex align-items-center justify-content-center  col-12"
                         />
                     </div>

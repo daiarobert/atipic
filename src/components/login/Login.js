@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import { setUserSession } from '../../utils/Common';
+import './login.scss';
 import Logo from '../dashboard/sideNav/logo_header.png';
 import Loading from '../dashboard/loader/Loading';
 
@@ -25,7 +26,7 @@ const Login = () => {
 
             setLoading(false);
             setUserSession(res.data.accessToken, res.data);
-            history.push('/dashboard');
+            history.push('/dashboard/users');
             console.log(res);
             console.log(loading);
         } catch (err) {
@@ -56,45 +57,47 @@ const Login = () => {
                     style={{ margin: 'auto', height: '100vh' }}
                 >
                     <div
-                        className="card col-12 shadow p-3 mb-5 bg-white rounded"
+                        className="card col-12 shadow p-3 bg-white rounded"
                         style={{ maxWidth: '350px', height: '450px' }}
                     >
                         <div className="card-header">
-                            <img src={Logo} style={{ maxWidth: '100%' }} />
+                            <img src={Logo} style={{ maxWidth: '100%', backgroundColor: 'rgba(0,0,0,0)' }} />
                         </div>
-                        <div className="card-body mb-3">
+                        <div className="card-body">
                             <label htmlFor="exampleInputUsername1" className="form-label">
-                                username
+                                Username:
                             </label>
                             <input
                                 type="username"
                                 className="form-control"
                                 id="exampleInputUsername1"
                                 aria-describedby="username"
+                                placeholder="Enter Username"
                                 required
                                 onChange={(e) => setUsername(e.target.value)}
                             />
-                            <label htmlFor="exampleInputPassword1" className="form-label">
-                                Password
+                            <label htmlFor="exampleInputPassword1" className="form-label mt-3">
+                                Password:
                             </label>
                             {error && <div className="error">{error}</div>}
                             <input
                                 type="password"
                                 className="form-control"
                                 id="exampleInputPassword1"
+                                placeholder="Enter Password"
                                 required
                                 onChange={(e) => setPassword(e.target.value)}
                             />
-                            <div id="credentialHelp" className="form-text">
-                                <p>
+                            <div id="credentialHelp" className="form-text text-muted mt-3">
+                                <p style={{ fontSize: '18px' }}>
                                     <bold>
-                                        You can use username: admin <br /> and password: 123456
+                                        username: admin <br /> password: 123456
                                     </bold>
                                 </p>
                             </div>
                         </div>
 
-                        <div className="card-footer">
+                        <div className="card-footer row">
                             <button type="submit " className="btn btn-primary">
                                 Submit
                             </button>

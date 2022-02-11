@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const Card = (props) => {
     return (
@@ -47,15 +49,12 @@ const Card = (props) => {
             </div>
             <div className="card-footer d-flex justify-content-center align-items-center p-0 mt-3">
                 {' '}
-                <button className="btn-outline-info rounded-2 col-5 m-1 " onClick={props.updateOnClick}>
-                    Update
+                <button className="btn-edit rounded-2 col-5 m-1 " onClick={props.updateOnClick}>
+                    <FontAwesomeIcon icon={faEdit} className="icon-edit"></FontAwesomeIcon>
                 </button>{' '}
-                <button
-                    className={`btn-outline-danger rounded-2 col-5 ${props.classNameDelete}`}
-                    onClick={props.deleteOnClick}
-                >
+                <button className={`btn-delete rounded-2 col-5 ${props.classNameDelete}`} onClick={props.deleteOnClick}>
                     <a href="#" className="card-link">
-                        Delete
+                        <FontAwesomeIcon icon={faTrash} className="icon-delete"></FontAwesomeIcon>
                     </a>
                 </button>
             </div>
