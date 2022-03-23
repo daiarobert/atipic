@@ -23,7 +23,6 @@ import UpdateArticle from './components/dashboard/articlesPage/updateArticle/Upd
 import Events from './components/dashboard/eventsPage/Events';
 import CreateEvent from './components/dashboard/eventsPage/createEvent/CreateEvent';
 import UpdateEvent from './components/dashboard/eventsPage/updateEvent/Update';
-import SideNav from './components/dashboard/sideNav/SideNav';
 
 function App() {
     return (
