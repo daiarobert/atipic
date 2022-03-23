@@ -63,7 +63,7 @@ function DonatePage() {
                             <a
                                 href="/donate"
                                 class="template-component-button template-component-button-style-2 template-section-white"
-                                alt="fill in form 230"
+                                alt="fill in form 230-"
                                 title="fill out form 230"
                             >
                                 Fill out the <i> </i> form
