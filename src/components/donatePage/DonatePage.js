@@ -51,7 +51,7 @@ function DonatePage() {
                         <button className="btn btn-outline-primary mb-2">
                             <a
                                 download=""
-                                href=""
+                                href="/donate"
                                 class="template-component-button template-component-button-style-2 template-section-white"
                                 alt="redirect_3.5_tax_to_atypical_"
                                 title="redirect_3.5_tax_to_atypical_"
@@ -61,7 +61,7 @@ function DonatePage() {
                         </button>
                         <button className="btn btn-outline-primary">
                             <a
-                                href=""
+                                href="/donate"
                                 class="template-component-button template-component-button-style-2 template-section-white"
                                 alt="fill in form 230"
                                 title="fill out form 230"

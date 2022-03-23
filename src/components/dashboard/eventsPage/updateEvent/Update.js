@@ -15,15 +15,15 @@ const Update = () => {
     const [endingDate, setEndingDate] = useState();
     const [description, setDescription] = useState();
     const [readMore, setReadMore] = useState();
-    const [telephone, setTelephone] = useState();
-    const [image, setImage] = useState({
-        firstName: '',
-        lastName: '',
-        email: '',
-        role: '',
-        address: '',
-        telephone: '',
-    });
+    //const [telephone, setTelephone] = useState();
+    // const [image, setImage] = useState({
+    //     firstName: '',
+    //     lastName: '',
+    //     email: '',
+    //     role: '',
+    //     address: '',
+    //     telephone: '',
+    // });
     const { id } = useParams();
     const token = getToken();
     const headers = {

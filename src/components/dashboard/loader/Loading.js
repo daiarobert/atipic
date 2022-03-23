@@ -5,7 +5,7 @@ import './loading.scss';
 const Loading = () => {
     return (
         <div className="loading-wrapper col-sm-12  col-lg-9 g-0 d-flex justify-content-center align-items-center">
-            <img src={Logo} style={{ minWidth: '250px', maxHeight: '250px' }}></img>
+            <img src={Logo} style={{ minWidth: '250px', maxHeight: '250px' }} alt="loading"></img>
         </div>
     );
 };

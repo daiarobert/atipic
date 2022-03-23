@@ -62,7 +62,7 @@ const CardInfo = (props) => {
                     <FontAwesomeIcon icon={faEdit} className="icon-edit"></FontAwesomeIcon>
                 </button>{' '}
                 <button className={`btn-delete rounded-2 col-5 ${props.classNameDelete}`} onClick={props.deleteOnClick}>
-                    <a href="#" className="card-link">
+                    <a href="/team" className="card-link">
                         <FontAwesomeIcon icon={faTrash} className="icon-delete"></FontAwesomeIcon>
                     </a>
                 </button>
