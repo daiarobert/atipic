@@ -1,0 +1,24 @@
+.wrapper {
+    margin-top: 3rem;
+    padding: 2rem;
+    .card-update {
+        max-width: 100%;
+
+        min-height: 350px;
+        padding: 20px;
+        border: solid 4px #fe660059;
+        //margin: 1rem;
+        .card-img-top {
+            //margin-left: 25%;
+            width: 80px;
+            border-radius: 50%;
+            border: 5px solid #56509f;
+            height: 80px;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+    }
+    img {
+        height: 300px;
+    }
+}

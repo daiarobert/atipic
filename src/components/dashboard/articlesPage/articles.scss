@@ -1,0 +1,36 @@
+.article {
+    .card-article {
+        max-width: 100%;
+        max-height: 650px;
+        min-height: 350px;
+        padding: 20px;
+        border: solid 4px hsla(24, 100%, 50%, 0.349);
+        //margin: 1rem;
+        .card-img-top {
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+    }
+    .btn-edit {
+        border: none;
+        background-color: #5f83cd;
+
+        .icon-edit {
+            color: white;
+        }
+    }
+    .btn-edit:hover {
+        background-color: #5170ad;
+    }
+
+    .btn-delete {
+        border: none;
+        background-color: #d2392a;
+        .icon-delete {
+            color: white;
+        }
+    }
+    .btn-delete:hover {
+        background-color: #b13125;
+    }
+}

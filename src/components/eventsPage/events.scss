@@ -1,9 +1,32 @@
 .wrapper {
-    
     .header {
         background-color: #fe6500;
         color: white;
         font-size: 20px;
         height: 3rem;
+    }
+    .card {
+        .btn-edit {
+            border: none;
+            background-color: #5f83cd;
+            .icon-edit {
+                color: white;
+            }
+        }
+        .btn-delete {
+            border: none;
+            background-color: #d2392a;
+            .icon-delete {
+                color: white;
+            }
+        }
+
+        .btn-delete:hover {
+            background-color: #b13125;
+        }
+
+        .btn-edit:hover {
+            background-color: #5170ad;
+        }
     }
 }

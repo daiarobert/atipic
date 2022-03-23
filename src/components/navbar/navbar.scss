@@ -1,74 +1,93 @@
-.nav-wrapper{
-  margin: 0;
-  background-color: white;
+.nav-wrapper {
+    margin: 0;
+    background-color: white;
 
-  .logo{
-      height: 80px;
-  }
-  .logo-scroll{
-    height: 60px;
-  }
-  .nav-link :hover{
-    .icons{
-      color: #fe6500;
+    .logo {
+        height: 80px;
     }
-    color: #fe6500;
-  }
-    .icons{
-        color: 
-        #5f83cd;
+    .logo-scroll {
+        height: 60px;
+    }
+    .nav-link :hover {
+        .icons {
+            color: #fe6500;
+        }
+        color: #fe6500;
+    }
+    #active {
+        .icons {
+            color: #fe6500;
+        }
+        color: #fe6500;
+    }
+    .icons {
+        color: #5f83cd;
         text-size-adjust: 35px;
         font-size: 35px;
     }
-    .nav-item{
-      height: 100%;
+    .nav-item {
+        height: 100%;
     }
     .nav-item:hover {
-      text-decoration-color: #fe6500;
-      height: 100%;
+        text-decoration-color: #fe6500;
+        height: 100%;
     }
 }
 
-
 ////////toggled
-.toggle-nav{
-  background-color: #fe6500;
-  margin: 0;
-  padding: 0;
-
-  .nav-link-toggle {
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-  }
-  
-  
-  li,img {
-    text-decoration-color: white;
-    color: white;
-  }
-  .navbar-toggler{
-    color: #fe6500 !important;
-    background-color: #fe6500 !important;
-
-  }
-}
-.icons-toggle{
-  text-size-adjust: 35px;
+.toggle-nav {
+    background-color: #fe6500;
+    margin: 0;
+    padding: 0;
+    .icons {
+        color: white;
+        text-size-adjust: 35px;
         font-size: 35px;
-        margin-right: 1rem;
+    }
+    p {
+        color: white;
+    }
+    #active {
+        .icons {
+            color: #5f83cd;
+            width: 100%;
+        }
+        p {
+            color: #5f83cd;
+        }
+    }
+    image:hover {
+        text-decoration-color: #5f83cd;
+        height: 100%;
+    }
+    // .nav-link-toggle {
+    //     text-decoration: none;
+    //     color: white;
+    //     font-size: 30px;
+    // }
+
+    // li,
+    // img {
+    //     text-decoration-color: white;
+    //     color: white;
+    // }
+    // .navbar-toggler {
+    //     color: #fe6500 !important;
+    //     background-color: #fe6500 !important;
+    // }
 }
-
-
-
-
+// .icons-toggle {
+//     color: white;
+//     text-size-adjust: 35px;
+//     font-size: 35px;
+//     margin-right: 1rem;
+// }
 
 @media only screen and (max-width: 991px) {
-  
-  .nav-wide{
-    display: none;
-  }
-  .nav-wrapper .logo{
-    height: 55px;
-}
+    .nav-wide {
+        display: none;
+    }
+    .nav-wrapper .logo {
+        height: 55px;
+    }
 }
