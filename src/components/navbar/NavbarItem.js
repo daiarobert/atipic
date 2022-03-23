@@ -7,7 +7,6 @@ import {
     faConciergeBell,
     faTicketAlt,
     faHandHoldingMedical,
-    faAddressCard,
 } from '@fortawesome/free-solid-svg-icons';
 
 export const NavData = [

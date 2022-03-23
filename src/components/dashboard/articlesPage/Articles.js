@@ -16,9 +16,9 @@ const Articles = () => {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
+        setLoading(true);
+        //const token = getToken();
         const fetchData = async () => {
-            setLoading(true);
-            const token = getToken();
             try {
                 const res = await Axios.get('https://atipic.herokuapp.com/api/v1/articles');
                 setArticles(res.data);

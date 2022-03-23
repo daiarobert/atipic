@@ -13,7 +13,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [username, setUsername] = useState('');
     const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(null);
+    const [error] = useState(null);
 
     const login = async () => {
         setLoading(true);
@@ -61,7 +61,11 @@ const Login = () => {
                         style={{ maxWidth: '350px', height: '350px' }}
                     >
                         <div className="card-header">
-                            <img src={Logo} style={{ maxWidth: '100%', backgroundColor: 'rgba(0,0,0,0)' }} />
+                            <img
+                                src={Logo}
+                                style={{ maxWidth: '100%', backgroundColor: 'rgba(0,0,0,0)' }}
+                                alt="card-header"
+                            />
                         </div>
                         <div className="card-body">
                             <label htmlFor="exampleInputUsername1" className="form-label">

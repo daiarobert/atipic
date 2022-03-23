@@ -5,7 +5,7 @@ import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
 const Card = (props) => {
     return (
         <div className="card-article shadow-lg p-3 mb-5 bg-white rounded">
-            <img className="card-img-top" src="..." alt="Card image cap" />
+            <img className="card-img-top" src="..." alt="Card cap" />
             <div className="card-body" style={{ minHeight: '500px' }}>
                 <label htmlFor="title" className="text-dark">
                     Title:
@@ -53,7 +53,7 @@ const Card = (props) => {
                     <FontAwesomeIcon icon={faEdit} className="icon-edit"></FontAwesomeIcon>
                 </button>{' '}
                 <button className={`btn-delete rounded-2 col-5 ${props.classNameDelete}`} onClick={props.deleteOnClick}>
-                    <a href="#" className="card-link">
+                    <a href="/article" className="card-link">
                         <FontAwesomeIcon icon={faTrash} className="icon-delete"></FontAwesomeIcon>
                     </a>
                 </button>

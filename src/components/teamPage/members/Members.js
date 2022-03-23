@@ -5,7 +5,6 @@ import Axios from 'axios';
 
 function Administrativ() {
     const [users, setUsers] = useState([]);
-    const [test, setTest] = useState([]);
 
     useEffect(() => {
         const getUsers = async () => {

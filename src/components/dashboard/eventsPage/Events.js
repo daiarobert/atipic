@@ -15,21 +15,24 @@ const Events = () => {
     const [loading, setLoading] = useState(false);
     const history = useHistory();
 
-    useEffect(async () => {
+    useEffect(() => {
         setLoading(true);
         const token = getToken();
-        try {
-            const res = await Axios.get('https://atipic.herokuapp.com/api/v1/events', {
-                headers: { token: `Bearer ${token}` },
-            });
-            setEvent(res.data);
-            setDate(moment(res.data.createdAt).format('DD MMM, YYYY'));
-            setLoading(false);
-            console.log(date);
-            console.log(event);
-        } catch (err) {
-            console.log(err);
-        }
+        const fetchData = async () => {
+            try {
+                const res = await Axios.get('https://atipic.herokuapp.com/api/v1/events', {
+                    headers: { token: `Bearer ${token}` },
+                });
+                setEvent(res.data);
+                setDate(moment(res.data.createdAt).format('DD MMM, YYYY'));
+                setLoading(false);
+                console.log(date);
+                console.log(event);
+            } catch (err) {
+                console.log(err);
+            }
+        };
+        fetchData();
     }, []);
 
     const handleDelete = async (id) => {

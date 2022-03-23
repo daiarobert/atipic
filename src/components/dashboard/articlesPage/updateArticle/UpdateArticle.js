@@ -20,15 +20,18 @@ const UpdateArticle = () => {
         token: `Bearer ${token}`,
     };
 
-    useEffect(async () => {
-        try {
-            const res = await Axios.get(`https://atipic.herokuapp.com/api/v1/articles/find/${id}`, {
-                headers: { token: `Bearer ${token}` },
-            });
-            setArticle(res.data);
-        } catch (err) {
-            console.log(err);
-        }
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const res = await Axios.get(`https://atipic.herokuapp.com/api/v1/articles/find/${id}`, {
+                    headers: { token: `Bearer ${token}` },
+                });
+                setArticle(res.data);
+            } catch (err) {
+                console.log(err);
+            }
+        };
+        fetchData();
     }, []);
 
     const updateArticle = async () => {

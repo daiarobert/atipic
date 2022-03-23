@@ -125,7 +125,7 @@ const InfoFirstPage = () => {
 
                 <InfoFirstPageItem
                     icon={faBaby}
-                    btnName="Citește mai mult"
+                    //btnName="Citește mai mult"
                     btnName="Read more"
                     title="Verbal Behavioral Therapy (VB)"
                     description="VB therapy encourages the learning of language and communication by connecting words with their meaning, thus learning that by using certain words we can achieve what we want."
