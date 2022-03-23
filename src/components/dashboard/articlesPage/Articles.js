@@ -15,17 +15,20 @@ const Articles = () => {
     const [articles, setArticles] = useState([]);
     const [loading, setLoading] = useState(false);
 
-    useEffect(async () => {
-        setLoading(true);
-        const token = getToken();
-        try {
-            const res = await Axios.get('https://atipic.herokuapp.com/api/v1/articles');
-            setArticles(res.data);
-            setLoading(false);
-            console.log(articles);
-        } catch (err) {
-            console.log(err);
-        }
+    useEffect(() => {
+        const fetchData = async () => {
+            setLoading(true);
+            const token = getToken();
+            try {
+                const res = await Axios.get('https://atipic.herokuapp.com/api/v1/articles');
+                setArticles(res.data);
+                setLoading(false);
+                console.log(articles);
+            } catch (err) {
+                console.log(err);
+            }
+        };
+        fetchData();
     }, []);
 
     const handleDelete = async (id) => {
