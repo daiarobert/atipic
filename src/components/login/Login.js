@@ -58,7 +58,7 @@ const Login = () => {
                 >
                     <div
                         className="card col-12 shadow p-3 bg-white rounded"
-                        style={{ maxWidth: '350px', height: '450px' }}
+                        style={{ maxWidth: '350px', height: '350px' }}
                     >
                         <div className="card-header">
                             <img src={Logo} style={{ maxWidth: '100%', backgroundColor: 'rgba(0,0,0,0)' }} />
