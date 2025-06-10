@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# 🧠 Atipic – Autism Support Center Website (MERN Stack)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Atipic** is a full-stack web application built for an autism support center. The platform includes both a public-facing website and an internal admin dashboard, enabling staff to manage content such as articles, team members, and homepage sections — all without needing technical knowledge.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `yarn start`
+### 🌐 Public Website
+- Informational homepage presenting the mission and services of the center
+- Dynamic blog section for articles and updates
+- Publicly visible team section with member bios and images
+- Responsive design optimized for accessibility
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 🔐 Admin Dashboard
+- Secure login system using JWT authentication
+- Admin panel with protected routes
+- Ability to create, update, and delete:
+  - Articles
+  - Team members
+  - Homepage content
+- Intuitive UI using Tailwind CSS, DaisyUI, and ShadCN
+- Built-in image and text management
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `yarn test`
+## 🛠 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend:** React, Bootstrap CSS, React Router
+- **Backend:** Node.js, Express.js, MongoDB
+- **Authentication:** Custom JWT-based login system
+- **State Management:** React Context API
+- **Deployment:** Netlify (frontend), Heroku (backend)
 
-### `yarn build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🔧 Prerequisites
+- Node.js
+- MongoDB URI (from MongoDB Atlas or local instance)
+- JWT Secret (for token generation and validation)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  
+🧠 What I Learned
+Building secure authentication with JWT and protected routes
 
-### `yarn eject`
+Structuring a full MERN project from scratch
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Creating a dashboard for content management
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Using React + Bootstrap for modern, accessible UI
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Connecting frontend and backend using REST APIs
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+🎯 Purpose
+The aim of this project is to demonstrate how technology can empower social impact organizations, such as autism support centers, by making content management easy, scalable, and secure.
 
-## Learn More
+Built with compassion 🧩
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🛠 Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# Clone the repository
+git clone https://github.com/daiarobert/atipic.git
+cd atipic
 
-### Code Splitting
+# Install frontend dependencies
+cd client
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Install backend dependencies
+cd ../server
+npm install
 
-### Analyzing the Bundle Size
+# Run backend
+cd server
+npm run dev
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# In a new terminal, run frontend
+cd client
+npm start
+```
